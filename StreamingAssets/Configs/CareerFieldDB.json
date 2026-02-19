@@ -1,0 +1,234 @@
+{
+  "note": "University of the Western Cape (UWC) undergraduate programs organized by faculty. Domain weights (I=Intellectual, C=Cognitive, P=Psychological, B=Behavioral), RIASEC codes (R=Realistic, I=Investigative, A=Artistic, S=Social, E=Enterprising, C=Conventional), and Big Five weights based on vocational psychology literature.",
+  
+  "fields": [
+    {
+      "name": "Faculty of Natural Sciences",
+      "domainWeights": { "I": 0.40, "C": 0.30, "P": 0.10, "B": 0.20 },
+      "riasec": { "R": 0.15, "I": 0.55, "A": 0.05, "S": 0.05, "E": 0.05, "C": 0.15 },
+      "bigfive": { "O": 0.4, "C": 0.5, "E": 0.2, "A": 0.2, "N": -0.2 },
+      "note": "Science careers emphasize analytical thinking, problem-solving, and systematic inquiry.",
+      "explanationTemplate": "With your {dominantRIASEC} orientation and traits like {topBigFiveTraits}, you may thrive in Natural Sciences fields that reward analytical problem-solving and systematic inquiry.",
+      "roles": [
+        {
+          "name": "BSc Biological Sciences",
+          "domainWeights": { "I": 0.40, "C": 0.30, "P": 0.10, "B": 0.20 },
+          "riasec": { "R": 0.20, "I": 0.55, "A": 0.05, "S": 0.05, "E": 0.05, "C": 0.10 },
+          "bigfive": { "O": 0.5, "C": 0.4, "E": 0.2, "A": 0.3, "N": -0.1 },
+          "description": "Studies living organisms, ecosystems, and biological processes through lab work and field research.",
+          "explanationTemplate": "Your {dominantRIASEC} code and {topBigFiveTraits} suggest Biological Sciences could suit your curiosity about living systems and analytical approach."
+        },
+        {
+          "name": "BSc Chemistry",
+          "domainWeights": { "I": 0.45, "C": 0.30, "P": 0.05, "B": 0.20 },
+          "riasec": { "R": 0.25, "I": 0.55, "A": 0.05, "S": 0.00, "E": 0.05, "C": 0.10 },
+          "bigfive": { "O": 0.4, "C": 0.5, "E": 0.2, "A": 0.2, "N": -0.2 },
+          "description": "Explores matter, chemical reactions, and molecular structures through laboratory experimentation.",
+          "explanationTemplate": "Because of your {dominantRIASEC} strengths and {topBigFiveTraits}, Chemistry may match your precision and systematic problem-solving."
+        },
+        {
+          "name": "BSc Physics",
+          "domainWeights": { "I": 0.50, "C": 0.30, "P": 0.05, "B": 0.15 },
+          "riasec": { "R": 0.20, "I": 0.60, "A": 0.05, "S": 0.00, "E": 0.05, "C": 0.10 },
+          "bigfive": { "O": 0.5, "C": 0.5, "E": 0.1, "A": 0.2, "N": -0.2 },
+          "description": "Investigates fundamental laws of nature, matter, energy, and the physical universe.",
+          "explanationTemplate": "With your {dominantRIASEC} orientation and {topBigFiveTraits}, Physics could align with your abstract reasoning and theoretical thinking."
+        },
+        {
+          "name": "BSc Mathematics",
+          "domainWeights": { "I": 0.50, "C": 0.35, "P": 0.05, "B": 0.10 },
+          "riasec": { "R": 0.05, "I": 0.70, "A": 0.10, "S": 0.00, "E": 0.05, "C": 0.10 },
+          "bigfive": { "O": 0.5, "C": 0.5, "E": 0.1, "A": 0.2, "N": -0.1 },
+          "description": "Develops logical reasoning and problem-solving through pure and applied mathematics.",
+          "explanationTemplate": "Your {dominantRIASEC} profile and {topBigFiveTraits} suggest Mathematics may suit your logical reasoning and abstract thinking."
+        },
+        {
+          "name": "BSc Computer Science",
+          "domainWeights": { "I": 0.45, "C": 0.35, "P": 0.05, "B": 0.15 },
+          "riasec": { "R": 0.10, "I": 0.60, "A": 0.05, "S": 0.05, "E": 0.05, "C": 0.15 },
+          "bigfive": { "O": 0.4, "C": 0.6, "E": 0.2, "A": 0.2, "N": -0.2 },
+          "description": "Combines algorithmic thinking, programming, and system design to solve computational problems.",
+          "explanationTemplate": "With your {dominantRIASEC} code and {topBigFiveTraits}, Computer Science could be a strong fit for your structured problem-solving and persistence."
+        },
+        {
+          "name": "BSc Information Systems",
+          "domainWeights": { "I": 0.35, "C": 0.30, "P": 0.10, "B": 0.25 },
+          "riasec": { "R": 0.05, "I": 0.50, "A": 0.05, "S": 0.10, "E": 0.15, "C": 0.15 },
+          "bigfive": { "O": 0.4, "C": 0.5, "E": 0.3, "A": 0.3, "N": -0.1 },
+          "description": "Integrates technology, business processes, and data management to solve organizational challenges.",
+          "explanationTemplate": "Because of your {dominantRIASEC} strengths and {topBigFiveTraits}, Information Systems may leverage both your analytical and interpersonal skills."
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Economic and Management Sciences",
+      "domainWeights": { "I": 0.30, "C": 0.20, "P": 0.15, "B": 0.35 },
+      "riasec": { "R": 0.05, "I": 0.20, "A": 0.05, "S": 0.15, "E": 0.40, "C": 0.15 },
+      "bigfive": { "O": 0.3, "C": 0.4, "E": 0.5, "A": 0.3, "N": -0.1 },
+      "note": "Business and economics fields emphasize strategic thinking, leadership, and organizational skills.",
+      "explanationTemplate": "Your {dominantRIASEC} orientation and {topBigFiveTraits} indicate strengths in Economic and Management Sciences, especially in leadership and strategic decision-making.",
+      "roles": [
+        {
+          "name": "BCom Accounting",
+          "domainWeights": { "I": 0.35, "C": 0.25, "P": 0.10, "B": 0.30 },
+          "riasec": { "R": 0.00, "I": 0.30, "A": 0.00, "S": 0.10, "E": 0.30, "C": 0.30 },
+          "bigfive": { "O": 0.2, "C": 0.6, "E": 0.3, "A": 0.3, "N": -0.2 },
+          "description": "Focuses on financial reporting, auditing, taxation, and management accounting principles.",
+          "explanationTemplate": "With your {dominantRIASEC} code and {topBigFiveTraits}, Accounting may align with your attention to detail and structured approach."
+        },
+        {
+          "name": "BCom Business Management",
+          "domainWeights": { "I": 0.25, "C": 0.20, "P": 0.15, "B": 0.40 },
+          "riasec": { "R": 0.05, "I": 0.15, "A": 0.05, "S": 0.20, "E": 0.45, "C": 0.10 },
+          "bigfive": { "O": 0.3, "C": 0.4, "E": 0.6, "A": 0.3, "N": -0.1 },
+          "description": "Develops leadership, strategy, and operational management skills for organizational success.",
+          "explanationTemplate": "Your {dominantRIASEC} strengths and {topBigFiveTraits} suggest Business Management could suit your leadership and decision-making abilities."
+        },
+        {
+          "name": "BCom Economics",
+          "domainWeights": { "I": 0.40, "C": 0.25, "P": 0.10, "B": 0.25 },
+          "riasec": { "R": 0.00, "I": 0.50, "A": 0.05, "S": 0.10, "E": 0.25, "C": 0.10 },
+          "bigfive": { "O": 0.4, "C": 0.4, "E": 0.3, "A": 0.3, "N": -0.1 },
+          "description": "Analyzes economic systems, markets, policy, and resource allocation using quantitative methods.",
+          "explanationTemplate": "Because of your {dominantRIASEC} orientation and {topBigFiveTraits}, Economics may match your analytical thinking and interest in systems."
+        },
+        {
+          "name": "BCom Industrial Psychology",
+          "domainWeights": { "I": 0.30, "C": 0.20, "P": 0.25, "B": 0.25 },
+          "riasec": { "R": 0.00, "I": 0.35, "A": 0.05, "S": 0.40, "E": 0.15, "C": 0.05 },
+          "bigfive": { "O": 0.4, "C": 0.4, "E": 0.4, "A": 0.5, "N": -0.1 },
+          "description": "Applies psychological principles to workplace behavior, organizational development, and human resources.",
+          "explanationTemplate": "With your {dominantRIASEC} profile and {topBigFiveTraits}, Industrial Psychology may leverage your people-focused strengths and analytical skills."
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Education",
+      "domainWeights": { "I": 0.25, "C": 0.15, "P": 0.25, "B": 0.35 },
+      "riasec": { "R": 0.05, "I": 0.20, "A": 0.10, "S": 0.50, "E": 0.10, "C": 0.05 },
+      "bigfive": { "O": 0.3, "C": 0.4, "E": 0.4, "A": 0.6, "N": -0.1 },
+      "note": "Education careers emphasize empathy, communication, patience, and the ability to inspire learning.",
+      "explanationTemplate": "Your {dominantRIASEC} code and {topBigFiveTraits} suggest you may excel in Education, where communication and empathy are vital.",
+      "roles": [
+        {
+          "name": "BEd Primary Education",
+          "domainWeights": { "I": 0.20, "C": 0.15, "P": 0.30, "B": 0.35 },
+          "riasec": { "R": 0.05, "I": 0.15, "A": 0.15, "S": 0.55, "E": 0.05, "C": 0.05 },
+          "bigfive": { "O": 0.3, "C": 0.4, "E": 0.4, "A": 0.7, "N": -0.1 },
+          "description": "Prepares teachers for Foundation and Intermediate Phase (Grades R-6) with focus on child development.",
+          "explanationTemplate": "With your {dominantRIASEC} traits and {topBigFiveTraits},Primary Education may align with your nurturing approach and patience."
+        },
+        {
+          "name": "BEd Secondary Education (Mathematics/Science)",
+          "domainWeights": { "I": 0.35, "C": 0.20, "P": 0.20, "B": 0.25 },
+          "riasec": { "R": 0.10, "I": 0.35, "A": 0.10, "S": 0.40, "E": 0.05, "C": 0.00 },
+          "bigfive": { "O": 0.4, "C": 0.4, "E": 0.4, "A": 0.5, "N": -0.1 },
+          "description": "Trains educators for Senior Phase (Grades 7-9) with specialization in mathematics or science teaching.",
+          "explanationTemplate": "Your {dominantRIASEC} orientation and {topBigFiveTraits} suggest Secondary Education may leverage both your subject expertise and teaching abilities."
+        },
+        {
+          "name": "BEd Educational Psychology",
+          "domainWeights": { "I": 0.30, "C": 0.20, "P": 0.30, "B": 0.20 },
+          "riasec": { "R": 0.00, "I": 0.30, "A": 0.05, "S": 0.55, "E": 0.05, "C": 0.05 },
+          "bigfive": { "O": 0.4, "C": 0.4, "E": 0.3, "A": 0.6, "N": -0.1 },
+          "description": "Focuses on learning processes, student development, and educational interventions for diverse learners.",
+          "explanationTemplate": "Because of your {dominantRIASEC} strengths and {topBigFiveTraits}, Educational Psychology may suit your reflective and supportive nature."
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Community and Health Sciences",
+      "domainWeights": { "I": 0.30, "C": 0.20, "P": 0.30, "B": 0.20 },
+      "riasec": { "R": 0.15, "I": 0.30, "A": 0.05, "S": 0.40, "E": 0.05, "C": 0.05 },
+      "bigfive": { "O": 0.3, "C": 0.4, "E": 0.3, "A": 0.5, "N": -0.2 },
+      "note": "Health sciences demand empathy, resilience, technical skills, and a balance of analytical and interpersonal abilities.",
+      "explanationTemplate": "Your {dominantRIASEC} profile and {topBigFiveTraits} suggest strong potential in Community and Health Sciences, where empathy and problem-solving are crucial.",
+      "roles": [
+      {
+        "name": "BSc Nursing",
+        "domainWeights": { "I": 0.25, "C": 0.20, "P": 0.35, "B": 0.20 },
+        "riasec": { "R": 0.20, "I": 0.25, "A": 0.00, "S": 0.50, "E": 0.00, "C": 0.05 },
+        "bigfive": { "O": 0.2, "C": 0.5, "E": 0.3, "A": 0.6, "N": -0.3 },
+        "description": "Provides patient care, health education, and clinical support across healthcare settings.",
+        "explanationTemplate": "With your {dominantRIASEC} code and {topBigFiveTraits}, Nursing may align with your caring nature and resilience under pressure."
+      },
+      {
+        "name": "BA Social Work",
+        "domainWeights": { "I": 0.20, "C": 0.15, "P": 0.40, "B": 0.25 },
+        "riasec": { "R": 0.00, "I": 0.20, "A": 0.05, "S": 0.65, "E": 0.05, "C": 0.05 },
+        "bigfive": { "O": 0.3, "C": 0.4, "E": 0.4, "A": 0.7, "N": -0.2 },
+        "description": "Supports individuals, families, and communities facing social challenges through advocacy and intervention.",
+        "explanationTemplate": "Your {dominantRIASEC} strengths and {topBigFiveTraits} suggest Social Work may suit your compassion and commitment to helping others."
+      },
+      {
+        "name": "BA Psychology",
+        "domainWeights": { "I": 0.35, "C": 0.20, "P": 0.30, "B": 0.15 },
+        "riasec": { "R": 0.00, "I": 0.40, "A": 0.05, "S": 0.50, "E": 0.00, "C": 0.05 },
+        "bigfive": { "O": 0.5, "C": 0.4, "E": 0.3, "A": 0.5, "N": -0.1 },
+        "description": "Explores human behavior, cognition, emotion, and mental processes through scientific inquiry.",
+        "explanationTemplate": "Because of your {dominantRIASEC} orientation and {topBigFiveTraits}, Psychology may match your curiosity about people and analytical thinking."
+      },
+      {
+        "name": "BSc Physiotherapy",
+        "domainWeights": { "I": 0.30, "C": 0.25, "P": 0.25, "B": 0.20 },
+        "riasec": { "R": 0.30, "I": 0.30, "A": 0.05, "S": 0.30, "E": 0.00, "C": 0.05 },
+        "bigfive": { "O": 0.3, "C": 0.5, "E": 0.3, "A": 0.5, "N": -0.2 },
+        "description": "Rehabilitates patients through movement, exercise, and manual therapy techniques.",
+        "explanationTemplate": "With your {dominantRIASEC} profile and {topBigFiveTraits}, Physiotherapy could leverage your hands-on approach and people skills."
+      },
+      {
+        "name": "BSc Occupational Therapy",
+        "domainWeights": { "I": 0.30, "C": 0.20, "P": 0.30, "B": 0.20 },
+        "riasec": { "R": 0.25, "I": 0.30, "A": 0.10, "S": 0.30, "E": 0.00, "C": 0.05 },
+        "bigfive": { "O": 0.4, "C": 0.5, "E": 0.3, "A": 0.5, "N": -0.1 },
+        "description": "Helps individuals develop skills for daily living and working through therapeutic activities.",
+        "explanationTemplate": "Your {dominantRIASEC} traits and {topBigFiveTraits} suggest Occupational Therapy may suit your creative problem-solving and empathy."
+      }
+    ]
+    },
+    {
+      "name": "Faculty of Arts",
+      "domainWeights": { "I": 0.30, "C": 0.20, "P": 0.20, "B": 0.30 },
+      "riasec": { "R": 0.00, "I": 0.30, "A": 0.35, "S": 0.20, "E": 0.10, "C": 0.05 },
+      "bigfive": { "O": 0.6, "C": 0.3, "E": 0.3, "A": 0.4, "N": 0.0 },
+      "note": "Arts and humanities emphasize critical thinking, creativity, cultural understanding, and communication.",
+      "explanationTemplate": "Your {dominantRIASEC} code and {topBigFiveTraits} indicate strengths in the Arts, where creative expression and analytical thinking converge.",
+      "roles": [
+        {
+          "name": "BA English Literature",
+          "domainWeights": { "I": 0.35, "C": 0.20, "P": 0.15, "B": 0.30 },
+          "riasec": { "R": 0.00, "I": 0.35, "A": 0.40, "S": 0.15, "E": 0.05, "C": 0.05 },
+          "bigfive": { "O": 0.7, "C": 0.4, "E": 0.3, "A": 0.4, "N": 0.0 },
+          "description": "Analyzes texts, develops critical reading skills, and explores literary traditions and cultural contexts.",
+          "explanationTemplate": "With your {dominantRIASEC} orientation and {topBigFiveTraits}, English Literature may align with your love of ideas and expressive thinking."
+        },
+        {
+          "name": "BA History",
+          "domainWeights": { "I": 0.35, "C": 0.20, "P": 0.15, "B": 0.30 },
+          "riasec": { "R": 0.00, "I": 0.45, "A": 0.20, "S": 0.20, "E": 0.10, "C": 0.05 },
+          "bigfive": { "O": 0.6, "C": 0.4, "E": 0.3, "A": 0.3, "N": 0.0 },
+          "description": "Investigates past events, societies, and cultures through research and critical analysis.",
+          "explanationTemplate": "Your {dominantRIASEC} strengths and {topBigFiveTraits} suggest History may suit your analytical curiosity and pattern recognition."
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Law",
+      "domainWeights": { "I": 0.40, "C": 0.25, "P": 0.15, "B": 0.20 },
+      "riasec": { "R": 0.00, "I": 0.45, "A": 0.05, "S": 0.20, "E": 0.25, "C": 0.05 },
+      "bigfive": { "O": 0.3, "C": 0.6, "E": 0.4, "A": 0.3, "N": -0.2 },
+      "note": "Legal studies require analytical reasoning, ethical judgment, persuasive communication, and meticulous attention to detail.",
+      "explanationTemplate": "Your {dominantRIASEC} profile and {topBigFiveTraits} indicate potential for Law, where structured reasoning and advocacy intersect.",
+      "roles": [
+      {
+        "name": "LLB (Law)",
+        "domainWeights": { "I": 0.40, "C": 0.25, "P": 0.15, "B": 0.20 },
+        "riasec": { "R": 0.00, "I": 0.45, "A": 0.05, "S": 0.20, "E": 0.25, "C": 0.05 },
+        "bigfive": { "O": 0.3, "C": 0.6, "E": 0.4, "A": 0.3, "N": -0.2 },
+        "description": "Develops legal reasoning, advocacy, and ethical judgment for careers in law and justice systems.",
+        "explanationTemplate": "With your {dominantRIASEC} code and {topBigFiveTraits}, Law may leverage your analytical precision and persuasive abilities."
+      }
+    ]
+    }
+  ]
+}

@@ -1,0 +1,1840 @@
+{
+  "VerbalComprehensionTest_test2": {
+    "metrics": {
+      "totalTime": {
+        "Cognitive": 0.5,
+        "Psychological": -0.2,
+        "normMin": 0,
+        "normMax": 1350,
+        "bigfive": { "Conscientiousness": -0.4, "Neuroticism": 0.3 },
+        "note": "Total time in seconds (15 questions × 90s = 1350s max). Longer time reduces Cognitive efficiency; negative contribution."
+      },
+      "totalCorrect": {
+        "Intellectual": 0.7,
+        "Cognitive": 0.2,
+        "Behavioral": 0.1,
+        "normMin": 0,
+        "normMax": 15,
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.4 },
+        "note": "Number of correct answers out of 15 questions. Validated: accuracy on SAT-style verbal items → crystallized/verbal ability (Intellectual)."
+      },
+      "totalQuestions": {
+        "note": "Total number of questions presented (should always be 15). Not used for scoring - informational only."
+      },
+      "totalPercentage": {
+        "Intellectual": 0.6,
+        "Cognitive": 0.3,
+        "Behavioral": 0.1,
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.4 },
+        "note": "Percentage correct (0-100%). Redundant with totalCorrect but useful for quick assessment."
+      },
+      "totalSkipped": {
+        "Behavioral": -0.6,
+        "Cognitive": -0.2,
+        "normMin": 0,
+        "normMax": 15,
+        "bigfive": { "Conscientiousness": -0.5 },
+        "note": "Number of skipped items (max 15). Treated as reduced persistence/engagement. Negative contribution."
+      },
+      "totalHints": {
+        "Behavioral": -0.5,
+        "Cognitive": -0.2,
+        "normMin": 0,
+        "normMax": 45,
+        "bigfive": { "Conscientiousness": -0.4, "Openness": -0.2 },
+        "note": "Total hints used across all questions (15 questions × 3 hints each = max 45). Higher hint usage indicates lower independence and self-efficacy. Negative contribution."
+      },
+      "avgConfidence": {
+        "Psychological": 0.6,
+        "Behavioral": 0.2,
+        "normMin": 0,
+        "normMax": 5,
+        "bigfive": { "Neuroticism": -0.5, "Extraversion": 0.3 },
+        "note": "Average confidence self-rating on 0-5 scale. Maps to self-efficacy and test anxiety (inverse)."
+      }
+    },
+    "survey": {
+      "mentalDemand": {
+        "mapping": {
+          "Extremely challenging": 100,
+          "Challenging": 75,
+          "Moderately difficult": 50,
+          "Slightly difficult": 25,
+          "Very easy": 0
+        },
+        "domains": { "Cognitive": 0.6, "Psychological": -0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Mental demand adapted for verbal comprehension. Perceived difficulty reflects both task challenge and participant ability."
+      },
+      "emotionalState": {
+        "mapping": {
+          "Calm and focused": 100,
+          "Slightly tense but manageable": 75,
+          "Neutral": 50,
+          "Stressed but still performing": 25,
+          "Overwhelmed": 0
+        },
+        "domains": { "Psychological": 0.7 },
+        "bigfive": { "Neuroticism": -0.6, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Emotional state during test. Maps to psychological resilience and stress tolerance. High calmness indicates low Neuroticism."
+      },
+      "riddleImpact": {
+        "mapping": {
+          "Yes it made me more prepared and engaged": 100,
+          "Yes it made me more tired or distracted": 25,
+          "No impact I treated them separately": 50,
+          "I skipped riddles so this didn't apply": 0
+        },
+        "domains": { "Behavioral": 0.4, "Cognitive": 0.2 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Impact of riddles on engagement vs cognitive fatigue. Positive impact indicates resilience and adaptive learning."
+      },
+      "bpm": {
+        "mapping": {
+          "Below 60 BPM (Bradycardia - very low)": 20,
+          "60-80 BPM (Normal/Optimal)": 100,
+          "81-90 BPM (Slightly elevated)": 70,
+          "91-100 BPM (Elevated)": 50,
+          "Above 100 BPM (Tachycardia - high)": 30
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.2, "Conscientiousness": 0.1 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Resting heart rate indicates autonomic nervous system regulation and stress levels. Optimal range is 60-80 BPM."
+      },
+      "stressLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "reverse": true,
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.6, "Conscientiousness": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-reported stress (1-10 scale). REVERSE-SCORED: higher stress indicates higher Neuroticism and lower performance resilience."
+      },
+      "focusLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-rated focus (1-10 scale). Predicts task accuracy and completion efficiency. High focus correlates with Conscientiousness."
+      },
+      "stressChange": {
+        "mapping": {
+          "Less stressed": 100,
+          "About the same": 50,
+          "More stressed": 0
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": -0.4, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-assessed stress change compared to pre-test. Feeling less stressed indicates emotional regulation and adaptive coping."
+      },
+      "environmentFamiliarity": {
+        "mapping": {
+          "Very familiar (like my own past or current studies)": 100,
+          "Somewhat familiar": 75,
+          "Neutral": 50,
+          "Somewhat unfamiliar": 25,
+          "Very unfamiliar": 0
+        },
+        "domains": { "Behavioral": 0.3, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Familiarity with academic/test environment affects behavioral comfort and performance baseline."
+      },
+      "careerReflection": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-reflection on career relevance of verbal skills. Indicates metacognitive awareness and future orientation."
+      },
+      "futureEnvironment": {
+        "mapping": {
+          "A high school environment": 30,
+          "A university environment": 60,
+          "A workplace/career environment": 100,
+          "None of these": 0
+        },
+        "domains": { "Behavioral": 0.3, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.4, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Resonance with future environment indicates career maturity and goal-directedness. Workplace orientation scored highest."
+      },
+      "hintUsage": {
+        "mapping": {
+          "Always": 0,
+          "Often": 25,
+          "Sometimes": 50,
+          "Rarely": 75,
+          "Never": 100
+        },
+        "domains": { "Behavioral": 0.5, "Cognitive": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Openness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-reported hint usage frequency. Correlates with totalHints metric. Independence proxy."
+      },
+      "riddleSkipping": {
+        "mapping": {
+          "Yes frequently": 0,
+          "Yes occasionally": 50,
+          "No I tried to solve them all": 100
+        },
+        "domains": { "Behavioral": 0.6, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.6, "Neuroticism": -0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Riddle completion persistence. Negative skipping indicates low Conscientiousness and possible avoidance behavior."
+      },
+      "approachToSAT": {
+        "mapping": {
+          "I pushed through even when stressed": 100,
+          "I took my time but finished": 75,
+          "I preferred to move on mentally if I felt stuck": 50,
+          "I lost motivation when stuck": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": -0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Problem-solving approach and resilience under difficulty. Persistence indicates high Conscientiousness and low Neuroticism."
+      },
+      "strengthAwareness": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.3 },
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-awareness of verbal abilities. Metacognitive insight correlates with Openness and self-monitoring (Conscientiousness)."
+      },
+      "careerReflectionStrength": {
+        "mapping": {
+          "Very strongly reflects it": 100,
+          "Somewhat reflects it": 75,
+          "Neutral": 50,
+          "Not much": 25,
+          "Not at all": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Perceived link between test performance and real-world verbal ability. Self-efficacy indicator."
+      },
+      "settingFutureSelf": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.3 },
+        "bigfive": { "Openness": 0.4, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Ability to imagine future success. Indicates psychological readiness and goal-directedness (future orientation)."
+      }
+    }
+  },
+  "MentalMathsTest2_2": {
+    "metrics": {
+      "finalTotalTime": {
+        "Cognitive": 0.5,
+        "Psychological": -0.2,
+        "normMin": 0,
+        "normMax": 2000,
+        "bigfive": { "Conscientiousness": -0.4, "Neuroticism": 0.3 },
+        "note": "Total time (s). Longer → lower efficiency. NormMax = 2000s."
+      },
+      "finalTotalScore": {
+        "Intellectual": 0.6,
+        "Cognitive": 0.2,
+        "Behavioral": 0.2,
+        "normMin": 0,
+        "normMax": 20,
+        "bigfive": { "Conscientiousness": 0.5, "Openness": 0.3 },
+        "note": "Arithmetic/mental maths score → Intellectual. NormMax = max possible score."
+      },
+      "finalTotalQuestions": {
+        "Cognitive": 0.2,
+        "Behavioral": 0.3,
+        "normMin": 0,
+        "normMax": 20,
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.2 },
+        "note": "Persistence/load measure — more attempted Qs = higher Behavioral/Cognitive."
+      },
+      "finalTotalPercentage": {
+        "Intellectual": 0.5,
+        "Cognitive": 0.3,
+        "Behavioral": 0.2,
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "note": "Accuracy across items. Intellectual + Cognitive balance."
+      },
+      "MentalMathsTest1_totalTime": {
+        "Cognitive": 0.3,
+        "normMin": 0,
+        "normMax": 1600,
+        "bigfive": { "Conscientiousness": -0.3, "Neuroticism": 0.2 },
+        "note": "Subtest 1 time (s)."
+      },
+      "MentalMathsTest1_totalPercentage": {
+        "Intellectual": 0.4,
+        "Cognitive": 0.2,
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.3 },
+        "note": "Subtest 1 accuracy."
+      },
+      "FullMathTest_totalTime": {
+        "Cognitive": 0.3,
+        "Psychological": -0.2,
+        "normMin": 0,
+        "normMax": 400,
+        "bigfive": { "Conscientiousness": -0.3, "Neuroticism": 0.3 },
+        "note": "Full test duration."
+      },
+      "FullMathTest_totalPercentage": {
+        "Intellectual": 0.4,
+        "Cognitive": 0.3,
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.3 },
+        "note": "Full test accuracy."
+      }
+    },
+    "survey": {
+      "mentalDemand": {
+        "mapping": {
+          "Extremely challenging": 100,
+          "Challenging": 75,
+          "Moderately difficult": 50,
+          "Slightly difficult": 25,
+          "Very easy": 0
+        },
+        "domains": { "Cognitive": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Mental demand for arithmetic tasks."
+      },
+      "timeLimitEffect": {
+        "mapping": {
+          "Made me perform better, sharpened my focus": 100,
+          "Increased my stress but I managed": 75,
+          "Neutral effect": 50,
+          "Reduced my performance, I felt pressured": 25,
+          "Strongly reduced my performance, I couldn't think clearly": 0
+        },
+        "domains": { "Cognitive": 0.4, "Psychological": 0.4 },
+        "bigfive": { "Conscientiousness": 0.3, "Neuroticism": -0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Response to time pressure."
+      },
+      "penaltyImpact": {
+        "mapping": {
+          "Motivated me to push harder": 100,
+          "Made me more cautious and focused": 75,
+          "Neutral, I kept going as usual": 50,
+          "Frustrated me but I continued": 25,
+          "Discouraged me significantly": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": -0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Response to penalty system."
+      },
+      "bpm": {
+        "mapping": {
+          "Below 60 BPM (Bradycardia - very low)": 20,
+          "60-80 BPM (Normal/Optimal)": 100,
+          "81-90 BPM (Slightly elevated)": 70,
+          "91-100 BPM (Elevated)": 50,
+          "Above 100 BPM (Tachycardia - high)": 30
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.2, "Conscientiousness": 0.1 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Resting heart rate indicates autonomic nervous system regulation and stress levels."
+      },
+      "stressLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "reverse": true,
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.6, "Conscientiousness": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-reported stress (1-10). REVERSE-SCORED."
+      },
+      "focusLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "domains": { "Cognitive": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-rated focus (1-10)."
+      },
+      "stressChange": {
+        "mapping": {
+          "Less stressed": 100,
+          "About the same": 50,
+          "More stressed": 0
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": -0.4, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Stress recovery after test."
+      },
+      "environmentEffect": {
+        "mapping": {
+          "It made the task more immersive and exciting": 100,
+          "It added pressure and intensity": 75,
+          "Neutral, I focused only on the math": 50,
+          "It distracted me from the task": 25,
+          "It felt uncomfortable and off-putting": 0
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.3 },
+        "bigfive": { "Openness": 0.4, "Neuroticism": -0.2, "Extraversion": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Environmental stimuli response."
+      },
+      "visualsImpact": {
+        "mapping": {
+          "Energized and ready for a challenge": 100,
+          "Focused but slightly uneasy": 75,
+          "Neutral": 50,
+          "Distracted or anxious": 25,
+          "Disconnected from the task": 0
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Openness": 0.3, "Neuroticism": -0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Visual stimuli impact on readiness."
+      },
+      "musicImpact": {
+        "mapping": {
+          "Strongly helped (kept me engaged)": 100,
+          "Somewhat helped": 75,
+          "Neutral": 50,
+          "Somewhat hindered (distracting)": 25,
+          "Strongly hindered": 0
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.3, "Extraversion": 0.2, "Neuroticism": -0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Audio impact on task performance."
+      },
+      "timeHandling": {
+        "mapping": {
+          "I worked quickly and stayed confident": 100,
+          "I rushed but felt uncertain": 60,
+          "I balanced speed and accuracy": 85,
+          "I slowed down too much and risked timing out": 40,
+          "I froze or guessed under pressure": 10
+        },
+        "domains": { "Cognitive": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Time management strategy."
+      },
+      "stressSource": {
+        "mapping": {
+          "Stress from the setting": 60,
+          "Stress from the timer": 60,
+          "Both equally": 40,
+          "Neither, only the math difficulty itself": 100
+        },
+        "domains": { "Psychological": 0.4, "Cognitive": 0.2 },
+        "bigfive": { "Neuroticism": 0.4, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Primary stress source attribution."
+      },
+      "mathApproach": {
+        "mapping": {
+          "I pushed through and tried to solve every one": 100,
+          "I made quick guesses to keep momentum": 70,
+          "I hesitated, sometimes losing time": 40,
+          "I became frustrated and wanted to give up": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Problem-solving persistence."
+      },
+      "strengthAwareness": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.3 },
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-awareness of mathematical abilities."
+      },
+      "careerReflectionStrength": {
+        "mapping": {
+          "Very strongly reflects it": 100,
+          "Somewhat reflects it": 75,
+          "Neutral": 50,
+          "Not much": 25,
+          "Not at all": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Perceived link between test performance and real-world ability."
+      },
+      "careerConnection": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.3 },
+        "bigfive": { "Openness": 0.4, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Perceived career relevance of mathematical skills."
+      }
+    }
+  },
+  "MemoryRecallTest_test2": {
+    "note": "Working memory / short-term memory block. Metrics map to validated constructs (WAIS working memory, n-back/span tasks, Baddeley & Hitch model). Surveys map to NASA-TLX (mental demand, frustration) and metacognitive/coping constructs.",
+    "metrics": {
+      "totalTime": {
+        "Cognitive": 0.40,
+        "Psychological": -0.20,
+        "normMin": 0,
+        "normMax": 3600,
+        "bigfive": { "Conscientiousness": -0.4, "Neuroticism": 0.3 },
+        "note": "Total completion time (seconds). Longer time → lower processing efficiency under memory load; negative contribution."
+      },
+      "totalLevelsCompleted": {
+        "Cognitive": 0.60,
+        "Behavioral": 0.25,
+        "Psychological": 0.15,
+        "normMin": 0,
+        "normMax": 4,
+        "bigfive": { "Conscientiousness": 0.5, "Openness": 0.3 },
+        "note": "Number of memory levels successfully completed. Validated: recall sequences → working memory capacity / short-term memory span."
+      },
+      "totalLevels": {
+        "Behavioral": 0.30,
+        "Cognitive": 0.20,
+        "normMin": 0,
+        "normMax": 4,
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.2 },
+        "note": "Total levels attempted (should always equal max 8). Persistence and tolerance for cognitive load."
+      },
+      "totalPercentage": {
+        "Cognitive": 0.50,
+        "Behavioral": 0.30,
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "note": "Percentage of levels completed successfully (0-100%). Maps primarily to Cognitive accuracy with a Behavioral component."
+      }
+    },
+    "survey": {
+      "difficulty": {
+        "mapping": {
+          "Extremely challenging": 100,
+          "Challenging": 75,
+          "Moderately difficult": 50,
+          "Slightly difficult": 25,
+          "Very easy": 0
+        },
+        "domains": { "Cognitive": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.3, "Neuroticism": 0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "NASA-TLX style mental demand — subjective cognitive load during memory task."
+      },
+      "longerSequences": {
+        "mapping": {
+          "Excited and motivated": 100,
+          "Focused but tense": 75,
+          "Neutral": 50,
+          "Frustrated but kept going": 25,
+          "Overwhelmed and discouraged": 0
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": -0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Emotional response to increasing memory load. Motivation under pressure vs. overload (behavioral & emotional response)."
+      },
+      "quitOrContinue": {
+        "mapping": {
+          "Quit early because it felt too difficult": 0,
+          "Quit early due to lack of motivation": 25,
+          "Continued until the very end": 100,
+          "Continued until I made too many mistakes": 50
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Direct behavioral measure of persistence / task withdrawal under cognitive load."
+      },
+      "bpm": {
+        "mapping": {
+          "Below 60 BPM (Bradycardia - very low)": 20,
+          "60-80 BPM (Normal/Optimal)": 100,
+          "81-90 BPM (Slightly elevated)": 70,
+          "91-100 BPM (Elevated)": 50,
+          "Above 100 BPM (Tachycardia - high)": 30
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.2, "Conscientiousness": 0.1 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Resting heart rate indicates autonomic nervous system regulation and stress levels. Optimal range is 60-80 BPM."
+      },
+      "stressLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "reverse": true,
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.6, "Conscientiousness": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-reported stress (1-10 scale). REVERSE-SCORED: Maps to NASA-TLX Frustration / emotional load under memory pressure."
+      },
+      "focusLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "domains": { "Cognitive": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-rated focus (1-10 scale). Sustained attention under working memory load (Cognitive domain)."
+      },
+      "stressChange": {
+        "mapping": {
+          "Less stressed": 100,
+          "About the same": 50,
+          "More stressed": 0
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": -0.4, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-reported stress change relative to pre-test baseline. Indicates stress reactivity and emotional regulation."
+      },
+      "mistakeHandling": {
+        "mapping": {
+          "I stayed calm and tried again immediately": 100,
+          "I felt frustrated but kept going": 75,
+          "I slowed down and lost focus": 50,
+          "I lost motivation and wanted to quit": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Error-coping strategy during memory failures. Strong predictor of resilience and sustained performance under cognitive challenge."
+      },
+      "memoryStrategy": {
+        "mapping": {
+          "I visualized the pattern in my head": 100,
+          "I repeated the sequence in my mind verbally": 75,
+          "I relied on instinct/guesswork": 25,
+          "I had no strategy": 0
+        },
+        "domains": { "Cognitive": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Openness": 0.5, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Metacognitive strategy use. Validated predictor of working memory performance (Baddeley & Hitch; strategy-based gains)."
+      },
+      "strengthAwareness": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.3 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-awareness of memory strengths. Metacognitive insight and self-monitoring ability."
+      },
+      "careerReflectionStrength": {
+        "mapping": {
+          "Very strongly reflects it": 100,
+          "Somewhat reflects it": 75,
+          "Neutral": 50,
+          "Not much": 25,
+          "Not at all": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Perceived career relevance of memory skills. Influences engagement and persistence in test behavior."
+      }
+    }
+  },
+  "ReactionTimerTest2_2": {
+    "note": "RT task — maps to processing speed (Cognitive), inhibitory control (Behavioral), and stress reactivity (Psychological).",
+    "metrics": {
+      "avgReactionTime": {
+        "Cognitive": -0.6,
+        "Behavioral": -0.2,
+        "Psychological": -0.2,
+        "normMin": 150,
+        "normMax": 500,
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": 0.3 },
+        "note": "Mean RT (milliseconds). Shorter = better processing speed/attentional control. NormMin: 150ms (elite athlete level, physiological limit ~120-150ms). NormMax: 500ms (slow but within normal range; 600ms+ indicates severe impairment)."
+      },
+      "finalReactionTime": {
+        "Cognitive": -0.4,
+        "Psychological": -0.2,
+        "normMin": 150,
+        "normMax": 600,
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": 0.3 },
+        "note": "Reaction time in final trials (milliseconds) — vigilance decrement / fatigue marker. Higher normMax (600ms) accounts for fatigue effects in later trials."
+      },
+      "totalPenalty": {
+        "Behavioral": -0.5,
+        "Psychological": -0.3,
+        "Cognitive": -0.2,
+        "normMin": 0,
+        "normMax": 10,
+        "bigfive": { "Conscientiousness": -0.5, "Neuroticism": 0.5 },
+        "note": "Total penalties for premature clicks (false starts). Higher penalties = poor inhibitory control, impulsivity. NormMax: 10 penalties (severe impulsivity); most users 0-3."
+      }
+    },
+    "survey": {
+      "waitingForGreen": {
+        "mapping": {
+          "Very easy, I stayed patient": 100,
+          "A little tense, but manageable": 75,
+          "Neutral, I didn't think much about it": 50,
+          "Restless, I struggled to wait": 25,
+          "Very difficult, I felt impatient": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Impulsivity vs. patience during anticipatory period. Matches Go/NoGo inhibitory control research."
+      },
+      "penaltyFeeling": {
+        "mapping": {
+          "It motivated me to be more careful": 100,
+          "It made me slightly anxious but I recovered": 75,
+          "Neutral, I just kept going": 50,
+          "It frustrated me but I continued": 25,
+          "It discouraged me significantly": 0
+        },
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": -0.5, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Emotional response to errors — relates to error monitoring and resilience. Motivated response indicates low Neuroticism."
+      },
+      "reactionSpeed": {
+        "mapping": {
+          "Very fast": 100,
+          "Fast": 75,
+          "Average": 50,
+          "Slow": 25,
+          "Very slow": 0
+        },
+        "domains": { "Cognitive": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Extraversion": 0.3, "Conscientiousness": 0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Self-perceived speed, cross-validates measured RT. Metacognitive accuracy indicator."
+      },
+      "bpm": {
+        "mapping": {
+          "Below 60 BPM (Bradycardia - very low)": 20,
+          "60-80 BPM (Normal/Optimal)": 100,
+          "81-90 BPM (Slightly elevated)": 70,
+          "91-100 BPM (Elevated)": 50,
+          "Above 100 BPM (Tachycardia - high)": 30
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.2, "Conscientiousness": 0.1 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Resting heart rate indicates autonomic nervous system regulation and stress levels. Optimal range is 60-80 BPM."
+      },
+      "stressLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "reverse": true,
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.6, "Conscientiousness": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "NASA-TLX Frustration dimension — REVERSE-SCORED: higher stress → worse psychological functioning."
+      },
+      "focusLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "domains": { "Cognitive": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Subjective attentional control (RT stability and consistency)."
+      },
+      "stressChange": {
+        "mapping": {
+          "Less stressed": 100,
+          "About the same": 50,
+          "More stressed": 0
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": -0.4, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Stress reactivity across the session. Recovery indicates emotional regulation."
+      },
+      "impulseControl": {
+        "mapping": {
+          "I stayed calm and only clicked when ready": 100,
+          "I clicked early a few times but adjusted": 75,
+          "I often clicked early and found it hard to stop": 25,
+          "I gave up trying to wait": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.6, "Neuroticism": -0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Direct self-report measure of inhibitory control."
+      },
+      "visualImpact": {
+        "mapping": {
+          "Focused and alert": 100,
+          "Tense but engaged": 75,
+          "Neutral": 50,
+          "Distracted": 25,
+          "Overstimulated": 0
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": -0.3, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "External environment / sensory distraction impact. Alert response indicates low Neuroticism and high Openness."
+      },
+      "reflexAwareness": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Extraversion": 0.3, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Metacognitive awareness of reflex ability; ties to self-monitoring and accurate self-assessment."
+      },
+      "careerReflectionStrength": {
+        "mapping": {
+          "Very strongly reflects it": 100,
+          "Somewhat reflects it": 75,
+          "Neutral": 50,
+          "Not much": 25,
+          "Not at all": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Motivational alignment with real-world application and career relevance."
+      }
+    }
+  },
+  "NavigationGrid2": {
+    "note": "Spatial navigation and grid-based problem solving.",
+    "metrics": {
+      "overallTotalTime": {
+        "Cognitive": 0.3,
+        "Psychological": -0.2,
+        "normMin": 0,
+        "normMax": 1800,
+        "bigfive": { "Conscientiousness": -0.3, "Neuroticism": 0.3 },
+        "note": "Total completion time (seconds). Longer = slower cognitive processing and possible stress overload. NormMax set to 1800s (30 min) to accommodate untimed nature while normalizing outliers."
+      },
+      "overallTotalPercentage": {
+        "Cognitive": 0.5,
+        "Intellectual": 0.3,
+        "Behavioral": 0.1,
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "note": "Percentage of correct paths. Validated indicator of visuospatial working memory and reasoning accuracy."
+      },
+      "avgAttempts": {
+        "Behavioral": -0.5,
+        "Cognitive": -0.2,
+        "normMin": 1,
+        "normMax": 10,
+        "bigfive": { "Conscientiousness": -0.5, "Neuroticism": 0.3 },
+        "note": "Average attempts per completed level (totalAttempts / completedLevels). More attempts = trial-and-error strategy, lower planning ability. NormMax: 10 attempts avg (severe planning deficit); optimal is 1-2 attempts."
+      },
+      "totalLevels": {
+        "note": "Total number of levels in the test (always 10). Informational only, not used for scoring."
+      },
+      "totalLevelsCompleted": {
+        "Cognitive": 0.4,
+        "Behavioral": 0.3,
+        "Intellectual": 0.2,
+        "normMin": 0,
+        "normMax": 10,
+        "bigfive": { "Conscientiousness": 0.5, "Openness": 0.3 },
+        "note": "Number of levels successfully completed out of 10 total. Indicates persistence and spatial reasoning ability."
+      }
+    },
+    "survey": {
+      "spatialDemand": {
+        "mapping": {
+          "Extremely challenging": 100,
+          "Challenging": 75,
+          "Moderately difficult": 50,
+          "Slightly difficult": 25,
+          "Very easy": 0
+        },
+        "domains": { "Cognitive": 0.5, "Psychological": 0.3 },
+        "bigfive": { "Openness": 0.3, "Neuroticism": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "NASA-TLX Mental Demand adapted for visuospatial load. Higher perceived difficulty indicates cognitive challenge."
+      },
+      "instructionDifficulty": {
+        "mapping": {
+          "Very difficult": 100,
+          "Somewhat difficult": 75,
+          "Neutral": 50,
+          "Somewhat easy": 25,
+          "Very easy": 0   
+        },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Executive planning vs impulsive problem-solving."
+      },
+      "bpm": {
+        "mapping": {
+          "Below 60 BPM (Bradycardia - very low)": 20,
+          "60-80 BPM (Normal/Optimal)": 100,
+          "81-90 BPM (Slightly elevated)": 70,
+          "91-100 BPM (Elevated)": 50,
+          "Above 100 BPM (Tachycardia - high)": 30
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.2, "Conscientiousness": 0.1 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Resting heart rate indicates autonomic nervous system regulation and stress levels."
+      },
+      "strategyuse": {
+        "mapping": {
+          "Confident and strategic": 100,
+          "Focused but tense": 75,
+          "Neutral, just trial and error": 50,
+          "Overwhelmed and unsure": 25
+        },
+        "domains": { "Cognitive": 0.4, "Psychological": 0.3 },
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": -0.3, "Openness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Strategic approach reflects executive function and planning."
+      },
+      "focusLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-rated focus predicts task accuracy and completion time."
+      },
+      "stressLevel": {
+        "scale": { "min": 1, "max": 10 },
+        "reverse": true,
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Neuroticism": 0.6, "Conscientiousness": -0.2 },
+        "normMin": 1,
+        "normMax": 10,
+        "note": "Self-reported stress during navigation task. REVERSE-SCORED."
+      },
+      "compareFeelBeforeAfter": {
+        "mapping": {
+          "Less stressed": 100,
+          "About the same": 75,
+          "More stressed": 50
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.3 },
+        "bigfive": { "Neuroticism": -0.4, "Conscientiousness": 0.3, "Agreeableness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Stress recovery and resilience."
+      },
+      "approach": {
+        "mapping": {
+          "I always aimed for the shortest path": 100,
+          "I tried to balance speed with accuracy": 90,
+          "I explored different routes, not just the shortest": 70,
+          "I moved step by step without much planning": 40
+        },
+        "domains": { "Cognitive": 0.5, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.5, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Planning and optimization strategy."
+      },
+      "errorHandling": {
+        "mapping": {
+          "Calmly corrected it and tried again": 100,
+          "Frustrated but kept going": 70,
+          "Hesitant, slowed down afterwards": 50,
+          "Discouraged and wanted to stop": 20
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.3 },
+        "bigfive": { "Neuroticism": -0.5, "Conscientiousness": 0.4, "Agreeableness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Error resilience and emotional regulation."
+      },
+      "pressureEffect": {
+        "mapping": {
+          "Made me sharper and more focused": 100,
+          "Added stress but I managed": 75,
+          "Neutral, I worked at my own pace": 60,
+          "Reduced my accuracy and confidence": 30
+        },
+        "domains": { "Psychological": 0.4, "Cognitive": 0.3 },
+        "bigfive": { "Neuroticism": -0.4, "Conscientiousness": 0.3, "Extraversion": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Response to time pressure."
+      },
+      "environmentEffect": {
+        "mapping": {
+          "Made it more immersive and engaging": 100,
+          "Made it slightly more stressful": 60,
+          "Neutral, I focused on the grid only": 75,
+          "Distracted me from the task": 30
+        },
+        "domains": { "Cognitive": 0.3, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.5, "Neuroticism": -0.2, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Sensitivity to environmental stimuli."
+      },
+      "gridAppearance": {
+        "mapping": {
+          "A puzzle game": 85,
+          "A math/logic challenge": 100,
+          "A maze or navigation problem": 90,
+          "Just a test with numbers": 50
+        },
+        "domains": { "Cognitive": 0.4, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.4, "Conscientiousness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Cognitive framing of the task."
+      },
+      "problemSolvingStyleAwareness": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 30,
+          "Not at all": 10
+        },
+        "domains": { "Cognitive": 0.3, "Psychological": 0.3 },
+        "bigfive": { "Openness": 0.5, "Conscientiousness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Metacognitive awareness of problem-solving style."
+      },
+      "realWorldSkillRelation": {
+        "mapping": {
+          "Planning and organization": 100,
+          "Analytical and mathematical reasoning": 95,
+          "Navigation and spatial awareness": 90,
+          "Stress management under rules and constraints": 80
+        },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.3 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Transfer of learning perception."
+      },
+      "taskPerformanceRealWorldReflection": {
+        "mapping": {
+          "Very strongly reflects it": 100,
+          "Somewhat reflects it": 75,
+          "Neutral": 50,
+          "Not much": 30
+        },
+        "domains": { "Psychological": 0.3, "Cognitive": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3, "Neuroticism": -0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Perceived validity and self-assessment accuracy."
+      }
+    }
+  },
+  "PsychologicalEvaluationTest_test2": {
+    "MotivationAssessment": {
+      "When working toward a difficult goal, what motivates you most?": {
+        "mapping": {
+          "The satisfaction of achievement": 100,
+          "Recognition or reward from others": 75,
+          "Pressure of deadlines or consequences": 50,
+          "Encouragement or expectations from others": 60
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Agreeableness": 0.2, "Neuroticism": -0.2 },
+        "note": "Intrinsic motivation (achievement satisfaction) → stronger Psychological resilience. Extrinsic (recognition/reward) → Behavioral persistence. Deadlines map lower to Psychological because they drive controlled rather than autonomous motivation."
+      },
+      "A project will take months to complete. How do you feel?": {
+        "mapping": {
+          "Energized by the long-term challenge": 100,
+          "Neutral, I’ll handle it step by step": 75,
+          "Pressured, I prefer shorter goals": 50,
+          "Discouraged, it feels too far away": 25
+        },
+        "domains": { "Behavioral": 0.3, "Psychological": 0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Neuroticism": -0.3 },
+        "note": "Validated by Grit Scale (Duckworth et al.): Endurance with long-term goals maps to Psychological resilience; short-term preference maps negatively to Behavioral persistence."
+      },
+      "When you hit a roadblock in your work, what’s your first move?": {
+        "mapping": {
+          "Push through alone until I solve it": 100,
+          "Seek advice or help": 75,
+          "Step away and return later": 50,
+          "Shift focus to something else": 25
+        },
+        "domains": { "Behavioral": 0.5, "Cognitive": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Extraversion": 0.2 },
+        "note": "Persistence in problem solving → Behavioral domain. Seeking help also has Cognitive problem-solving implications."
+      },
+      "Which best describes your work style?": {
+        "mapping": {
+          "Consistent and steady, even if progress is slow": 100,
+          "Energetic bursts of effort, then breaks": 75,
+          "Reactive, depending on pressure": 50,
+          "Driven mostly by others’ expectations": 25
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.5, "Neuroticism": -0.2 },
+        "note": "Consistency and steady effort align with Behavioral persistence. External drive lowers Psychological autonomy."
+      },
+      "Imagine receiving no recognition for your work. How do you react?": {
+        "mapping": {
+          "Still satisfied if I did well": 100,
+          "A bit demotivated, recognition matters": 75,
+          "Frustrated, recognition is very important": 50,
+          "Indifferent, as long as it’s finished": 25
+        },
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.3, "Neuroticism": -0.3, "Agreeableness": 0.2 },
+        "note": "Resilience to lack of recognition (intrinsic satisfaction) maps strongly to Psychological stability. Recognition reliance → extrinsic, Behavioral."
+      },
+      "What motivates you most in school, uni, or work?": {
+        "mapping": {
+          "Mastery and learning itself": 100,
+          "Praise and rewards": 75,
+          "Fear of failing": 40,
+          "Being part of a supportive team": 75
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.3, "Psychological": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.2, "Agreeableness": 0.2, "Neuroticism": -0.2 },
+        "note": "SDT intrinsic: mastery → Cognitive & Psychological. Extrinsic (praise/fear/team) → Behavioral persistence. Fear of failure is controlled motivation, weaker overall."
+      }
+    },
+    "Multitasking": {
+      "You’re under deadline pressure when a friend asks for urgent help. What do you do?": {
+        "mapping": {
+          "Drop my task to help immediately": 50,
+          "Try to balance both at once": 75,
+          "Explain I’ll help once I finish my priority": 100,
+          "Find someone else who can assist": 80
+        },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Agreeableness": 0.3 },
+        "note": "Cognitive load theory: prioritization and inhibition (finishing primary task first) maps to Cognitive control. Balancing maps partially to Behavioral persistence."
+      },
+      "You’re juggling several roles in a project. How do you handle it?": {
+        "mapping": {
+          "Focus fully on one before switching": 100,
+          "Switch frequently between roles": 75,
+          "Ask others to share responsibilities": 80,
+          "Only do the urgent parts, leave the rest": 50
+        },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.5, "Extraversion": 0.2 },
+        "note": "Executive functioning (task switching vs sustained attention). Focusing fully reflects higher Cognitive efficiency."
+      },
+      "You’re in a timed exam with many sections. What’s your strategy?": {
+        "mapping": {
+          "Start with the easiest section to secure marks": 100,
+          "Start with the hardest to get it done first": 80,
+          "Skim all, then divide time evenly": 90,
+          "Go with instinct, answering as I go": 60
+        },
+        "domains": { "Cognitive": 0.5 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.5, "Openness": 0.2 },
+        "note": "Time-management strategies: systematic approaches (easy first, or balanced allocation) are validated predictors of Cognitive planning ability."
+      },
+      "At work, two urgent requests arrive at once. What’s your instinct?": {
+        "mapping": {
+          "Prioritize based on deadlines": 100,
+          "Prioritize based on importance to others": 80,
+          "Try to start both and see how far I get": 70,
+          "Wait for clarification from a supervisor": 60
+        },
+        "domains": { "Cognitive": 0.5, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.5, "Agreeableness": 0.2 },
+        "note": "Prioritising by deadlines is strongest Cognitive control. Behavioral factor reflects adapting under ambiguity."
+      },
+      "In a group project, everyone depends on you for updates. How do you cope?": {
+        "mapping": {
+          "Keep organized lists and complete tasks systematically": 100,
+          "Juggle many things at once, even if stressful": 75,
+          "Ask for help to share the load": 80,
+          "Focus on the most visible tasks first": 60
+        },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.5, "Extraversion": 0.2 },
+        "note": "Systematic organisation reflects Cognitive executive control. Juggling tasks reflects Behavioral perseverance, even under stress."
+      },
+      "You’re interrupted constantly while working. How do you respond?": {
+        "mapping": {
+          "Politely ask for time to focus": 100,
+          "Try to handle interruptions immediately": 75,
+          "Get stressed but adapt": 60,
+          "Ignore interruptions if possible": 50
+        },
+        "domains": { "Psychological": 0.3, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.3, "Neuroticism": -0.3, "Agreeableness": 0.2 },
+        "note": "Resisting interruptions reflects Psychological resilience; handling immediately reflects Behavioral compliance but less Cognitive efficiency."
+      }
+    },
+    "EmotionalResponses": {
+      "A teacher or boss criticizes your work harshly in public. What do you do?": {
+        "mapping": {
+          "Stay calm, listen, and learn": 100,
+          "Feel upset but stay quiet": 75,
+          "Defend myself immediately": 50,
+          "Withdraw and lose motivation": 25
+        },
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Neuroticism": -0.4, "Agreeableness": 0.3, "Conscientiousness": 0.3 },
+        "note": "Maps to emotion regulation strategies. Calm listening = reappraisal (positive). Immediate defense = suppression (lower score)."
+      },
+      "You’re excluded from a group activity you wanted to join. First reaction?": {
+        "mapping": {
+          "Disappointed but move on": 100,
+          "Hurt, but try to understand why": 75,
+          "Angry, it feels unfair": 50,
+          "Indifferent, I didn’t care much": 25
+        },
+        "domains": { "Psychological": 0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Extraversion": 0.3, "Agreeableness": 0.3, "Neuroticism": -0.3 },
+        "note": "Affective reaction scale. Moving on = adaptive coping. Anger/indifference reflect disengagement."
+      },
+      "You make a mistake that affects your team. What do you do?": {
+        "mapping": {
+          "Admit it and suggest fixes": 100,
+          "Feel guilty but wait for others to raise it": 75,
+          "Quietly fix it if I can": 60,
+          "Blame circumstances or others": 25
+        },
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Agreeableness": 0.3, "Neuroticism": -0.3 },
+        "note": "Problem-focused coping. Admission and repair = high adaptive coping; blame = externalisation."
+      },
+      "You’re waiting in a very long queue. What’s your state of mind?": {
+        "mapping": {
+          "Patient, I can wait": 100,
+          "Slightly irritated but calm": 75,
+          "Restless and impatient": 50,
+          "Frustrated, I want to leave": 25
+        },
+        "domains": { "Psychological": 0.4 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Neuroticism": -0.4, "Conscientiousness": 0.2 },
+        "note": "Patience vs irritability maps to emotional tolerance and frustration control (self-regulation)."
+      },
+      "Someone takes credit for your work. How do you react?": {
+        "mapping": {
+          "Confront them calmly": 100,
+          "Feel upset but avoid conflict": 75,
+          "Bring it up later in private": 80,
+          "Leave it alone, not worth fighting": 50
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Agreeableness": 0.3, "Conscientiousness": 0.3, "Neuroticism": -0.2 },
+        "note": "Conflict management style. Calm confrontation/private discussion reflect assertive coping."
+      },
+      "You’re under a lot of stress. How do you cope first?": {
+        "mapping": {
+          "Break tasks into small parts": 100,
+          "Talk to someone I trust": 80,
+          "Distract myself with other activities": 60,
+          "Procrastinate or avoid the problem": 25
+        },
+        "domains": { "Psychological": 0.5, "Behavioral": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "bigfive": { "Conscientiousness": 0.4, "Agreeableness": 0.2, "Neuroticism": -0.3 },
+        "note": "Problem-focused (breaking tasks), social support, vs avoidant coping (distraction, procrastination)."
+      }
+    },
+    "PersonalityProfiler": {
+      "Which type of work do you prefer?": {
+        "mapping": {
+          "Hands-on, practical, using tools or equipment": 100,
+          "Investigating ideas, research, problem-solving": 100,
+          "Creative and expressive, working with imagination": 100,
+          "Helping people, making a positive impact": 100
+        },
+        "RIASEC": {
+          "Hands-on, practical, using tools or equipment": "R",
+          "Investigating ideas, research, problem-solving": "I",
+          "Creative and expressive, working with imagination": "A",
+          "Helping people, making a positive impact": "S"
+        },
+        "domains": { "Behavioral": 0.3, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.4, "Extraversion": 0.2, "Agreeableness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Holland RIASEC primary work preference. Each answer maps to one type."
+      },
+      "Which work environment suits you best?": {
+        "mapping": {
+          "Competitive and ambitious, leading others": 100,
+          "Structured and organized, following clear procedures": 100,
+          "Flexible and creative, room for expression": 100,
+          "Supportive and collaborative, helping others succeed": 100
+        },
+        "RIASEC": {
+          "Competitive and ambitious, leading others": "E",
+          "Structured and organized, following clear procedures": "C",
+          "Flexible and creative, room for expression": "A",
+          "Supportive and collaborative, helping others succeed": "S"
+        },
+        "domains": { "Behavioral": 0.3, "Psychological": 0.2 },
+        "bigfive": { "Extraversion": 0.3, "Conscientiousness": 0.3, "Openness": 0.2, "Agreeableness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "RIASEC environment preference (E, C, A, S)."
+      },
+      "What personal value matters most in your career?": {
+        "mapping": {
+          "Stability and security, clear expectations": 100,
+          "Creativity and innovation, trying new things": 100,
+          "Helping and supporting others, making a difference": 100,
+          "Leadership and influence, driving results": 100
+        },
+        "RIASEC": {
+          "Stability and security, clear expectations": "C",
+          "Creativity and innovation, trying new things": "A",
+          "Helping and supporting others, making a difference": "S",
+          "Leadership and influence, driving results": "E"
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.3, "Agreeableness": 0.2, "Extraversion": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Values aligned to RIASEC (C, A, S, E)."
+      },
+      "How do you usually approach new challenges?": {
+        "mapping": {
+          "With curiosity and experimentation, eager to explore": 100,
+          "With caution and planning, step-by-step": 100,
+          "With enthusiasm and energy, diving right in": 100,
+          "With hands-on action, learning by doing": 100
+        },
+        "RIASEC": {
+          "With curiosity and experimentation, eager to explore": "I",
+          "With caution and planning, step-by-step": "C",
+          "With enthusiasm and energy, diving right in": "E",
+          "With hands-on action, learning by doing": "R"
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.3 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.3, "Extraversion": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Challenge approach style (I, C, E, R)."
+      },
+      "How do you prefer to make decisions?": {
+        "mapping": {
+          "Based on facts and analysis, thorough research": 100,
+          "Based on intuition and creativity, new perspectives": 100,
+          "Based on values and impact on others, what's best for people": 100,
+          "Based on efficiency and results, what works best": 100
+        },
+        "RIASEC": {
+          "Based on facts and analysis, thorough research": "I",
+          "Based on intuition and creativity, new perspectives": "A",
+          "Based on values and impact on others, what's best for people": "S",
+          "Based on efficiency and results, what works best": "E"
+        },
+        "domains": { "Cognitive": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.3, "Agreeableness": 0.2, "Extraversion": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Decision-making style (I, A, S, E)."
+      },
+      "When given freedom in work, what do you do?": {
+        "mapping": {
+          "Create something new and original": 100,
+          "Organize and structure tasks systematically": 100,
+          "Explore new knowledge or conduct research": 100,
+          "Build relationships and support teamwork": 100
+        },
+        "RIASEC": {
+          "Create something new and original": "A",
+          "Organize and structure tasks systematically": "C",
+          "Explore new knowledge or conduct research": "I",
+          "Build relationships and support teamwork": "S"
+        },
+        "domains": { "Behavioral": 0.4, "Cognitive": 0.2 },
+        "bigfive": { "Openness": 0.4, "Conscientiousness": 0.3, "Agreeableness": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Work freedom preference (A, C, I, S)."
+      },
+      "What gives you the most satisfaction in work or study?": {
+        "mapping": {
+          "Solving complex problems and understanding how things work": 100,
+          "Expressing creativity and producing original work": 100,
+          "Helping someone succeed or overcome challenges": 100,
+          "Meeting goals and achieving visible results": 100
+        },
+        "RIASEC": {
+          "Solving complex problems and understanding how things work": "I",
+          "Expressing creativity and producing original work": "A",
+          "Helping someone succeed or overcome challenges": "S",
+          "Meeting goals and achieving visible results": "E"
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.3, "Agreeableness": 0.2, "Extraversion": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Satisfaction drivers (I, A, S, E)."
+      },
+      "When working on a project, you prefer to:": {
+        "mapping": {
+          "Work independently with tools or technical equipment": 100,
+          "Lead and coordinate a team toward a goal": 100,
+          "Follow established procedures and maintain accuracy": 100,
+          "Experiment with creative solutions and new ideas": 100
+        },
+        "RIASEC": {
+          "Work independently with tools or technical equipment": "R",
+          "Lead and coordinate a team toward a goal": "E",
+          "Follow established procedures and maintain accuracy": "C",
+          "Experiment with creative solutions and new ideas": "A"
+        },
+        "domains": { "Behavioral": 0.4, "Cognitive": 0.2 },
+        "bigfive": { "Extraversion": 0.3, "Conscientiousness": 0.3, "Openness": 0.3 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Work style preference (R, E, C, A). Added to ensure R is sufficiently represented."
+      },
+      "In a team setting, what role naturally fits you?": {
+        "mapping": {
+          "The problem-solver who analyzes and finds solutions": 100,
+          "The innovator who suggests creative approaches": 100,
+          "The supporter who helps others and maintains harmony": 100,
+          "The organizer who keeps everything on track": 100
+        },
+        "RIASEC": {
+          "The problem-solver who analyzes and finds solutions": "I",
+          "The innovator who suggests creative approaches": "A",
+          "The supporter who helps others and maintains harmony": "S",
+          "The organizer who keeps everything on track": "C"
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.2 },
+        "bigfive": { "Agreeableness": 0.3, "Conscientiousness": 0.3, "Openness": 0.2, "Extraversion": 0.2 },
+        "normMin": 0,
+        "normMax": 100,
+        "note": "Team role preference (I, A, S, C). Ensures all 6 types well-represented."
+      }
+    },
+    "TIPIInventory": {
+      "note": "Ten-Item Personality Inventory (TIPI). 7-point Likert scale (1=Disagree strongly, 7=Agree strongly). Items 2, 4, 6, 8, 10 are reverse-scored.",
+      
+      "I see myself as extraverted and enthusiastic": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "E": 1.0 },
+        "domains": { "Psychological": 0.2, "Behavioral": 0.2 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 1: Extraversion (direct)"
+      },
+      "I see myself as critical and quarrelsome": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "A": -1.0 },
+        "domains": { "Psychological": 0.2 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 2: Agreeableness (REVERSE-SCORED)"
+      },
+      "I see myself as dependable and self-disciplined": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "C": 1.0 },
+        "domains": { "Behavioral": 0.3, "Psychological": 0.2 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 3: Conscientiousness (direct)"
+      },
+      "I see myself as anxious and easily upset": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "N": 1.0 },
+        "domains": { "Psychological": 0.4 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 4: Neuroticism (direct)"
+      },
+      "I see myself as open to new experiences and complex": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "O": 1.0 },
+        "domains": { "Cognitive": 0.2, "Behavioral": 0.2 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 5: Openness (direct)"
+      },
+      "I see myself as reserved and quiet": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "E": -1.0 },
+        "domains": { "Psychological": 0.2 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 6: Extraversion (REVERSE-SCORED)"
+      },
+      "I see myself as sympathetic and warm": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "A": 1.0 },
+        "domains": { "Psychological": 0.3 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 7: Agreeableness (direct)"
+      },
+      "I see myself as disorganized and careless": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "C": -1.0 },
+        "domains": { "Behavioral": 0.3 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 8: Conscientiousness (REVERSE-SCORED)"
+      },
+      "I see myself as calm and emotionally stable": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "N": -1.0 },
+        "domains": { "Psychological": 0.4 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 9: Neuroticism (REVERSE-SCORED)"
+      },
+      "I see myself as conventional and uncreative": {
+        "scale": { "min": 1, "max": 7 },
+        "BigFive": { "O": -1.0 },
+        "domains": { "Cognitive": 0.2 },
+        "normMin": 1,
+        "normMax": 7,
+        "note": "TIPI Item 10: Openness (REVERSE-SCORED)"
+      }
+    }
+  },
+  "OverallEvaluation": {
+    "note": "End-of-assessment reflection survey.",
+    "survey": {
+      "overallEngagement": {
+        "mapping": {
+          "Extremely engaging": 100,
+          "Quite engaging": 75,
+          "Neutral": 50,
+          "Slightly disengaging": 25,
+          "Very disengaging": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Extraversion": 0.4, "Conscientiousness": 0.3 },
+        "note": "Captures persistence and intrinsic motivation."
+      },
+      "comparisonEnjoyment": {
+        "mapping": {
+          "Much more enjoyable": 100,
+          "Somewhat more enjoyable": 75,
+          "About the same": 50,
+          "Somewhat less enjoyable": 25,
+          "Much less enjoyable": 0
+        },
+        "domains": { "Psychological": 0.4, "Behavioral": 0.2 },
+        "bigfive": { "Extraversion": 0.3, "Openness": 0.3 },
+        "note": "Intrinsic enjoyment vs traditional testing."
+      },
+      "immersion": {
+        "mapping": {
+          "Extremely immersive": 100,
+          "Quite immersive": 75,
+          "Neutral": 50,
+          "Slightly distracting": 25,
+          "Very distracting": 0
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.3 },
+        "bigfive": { "Openness": 0.4, "Conscientiousness": 0.2 },
+        "note": "Higher immersion supports sustained focus."
+      },
+      "motivationComparison": {
+        "mapping": {
+          "Much more motivated": 100,
+          "Somewhat more motivated": 75,
+          "No difference": 50,
+          "Somewhat less motivated": 25,
+          "Much less motivated": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Extraversion": 0.2 },
+        "note": "Motivational gain compared to paper-based testing."
+      },
+      "trueAbilitiesFormat": {
+        "mapping": {
+          "The VR application": 100,
+          "Traditional pen-and-paper test": 50,
+          "Both equally": 75,
+          "Neither fully reflects me": 25
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.2 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.2 },
+        "note": "Self-reported validity perception."
+      },
+      "realWorldFormat": {
+        "mapping": {
+          "The VR application": 100,
+          "Traditional pen-and-paper test": 50,
+          "Both equally": 75,
+          "Neither": 25
+        },
+        "domains": { "Behavioral": 0.3, "Cognitive": 0.2 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.2 },
+        "note": "Ecological validity measure — alignment with real-world stress and performance contexts."
+      },
+      "mostStressfulTask": {
+        "mapping": {
+          "Verbal Comprehension (High School)": 60,
+          "Math/Logical Reasoning (Sci-Fi Warehouse)": 70,
+          "Memory Recall": 65,
+          "Reaction Timer": 55,
+          "Personality Profiler": 40
+        },
+        "domains": { "Psychological": -0.4 },
+        "bigfive": { "Neuroticism": 0.5 },
+        "note": "Retrospective stress attribution."
+      },
+      "mostEnjoyableTask": {
+        "mapping": {
+          "Verbal Comprehension (High School)": 70,
+          "Math/Logical Reasoning (Sci-Fi Warehouse)": 75,
+          "Memory Recall": 65,
+          "Reaction Timer": 60,
+          "Personality Profiler": 50
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.2 },
+        "bigfive": { "Extraversion": 0.3, "Openness": 0.3 },
+        "note": "Enjoyment attribution."
+      },
+      "highestStressOverall": {
+        "scale": { "min": 1, "max": 10 },
+        "domains": { "Psychological": -0.5 },
+        "bigfive": { "Neuroticism": 0.6 },
+        "note": "Global stress management rating."
+      },
+      "strengthInsight": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Cognitive": 0.3, "Behavioral": 0.3 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.3 },
+        "note": "Career Adapt-Abilities Scale — Self-insight subscale."
+      },
+      "patternAwareness": {
+        "mapping": {
+          "Strongly yes": 100,
+          "Somewhat yes": 75,
+          "Neutral": 50,
+          "Not really": 25,
+          "Not at all": 0
+        },
+        "domains": { "Cognitive": 0.3, "Psychological": 0.2 },
+        "bigfive": { "Openness": 0.4, "Conscientiousness": 0.2 },
+        "note": "Metacognitive awareness of patterns across tasks."
+      },
+      "careerHelpfulness": {
+        "mapping": {
+          "Very helpful": 100,
+          "Somewhat helpful": 75,
+          "Neutral": 50,
+          "Not very helpful": 25,
+          "Not helpful at all": 0
+        },
+        "domains": { "Behavioral": 0.4, "Psychological": 0.2 },
+        "bigfive": { "Conscientiousness": 0.4, "Openness": 0.2 },
+        "note": "Perceived career utility."
+      },
+      "leastTestedTrait": {
+        "mapping": {
+          "Creativity and imagination": 40,
+          "Leadership and influence": 40,
+          "Social connection and teamwork": 40,
+          "Ethical decision-making": 40,
+          "Independence and adaptability": 40
+        },
+        "domains": { "Behavioral": 0.2 },
+        "bigfive": { "Openness": 0.3, "Agreeableness": 0.2 },
+        "note": "Exploratory — asks users which career traits were underrepresented."
+      },
+      "mostTestedTrait": {
+        "mapping": {
+          "Intellectual abilities (math, verbal)": 100,
+          "Cognitive processing (memory, attention, speed)": 100,
+          "Emotional regulation (stress, coping)": 100,
+          "Behavioral strategies (motivation, persistence, risk-taking)": 100
+        },
+        "domains": { "Intellectual": 0.2, "Cognitive": 0.2, "Psychological": 0.2, "Behavioral": 0.2 },
+        "bigfive": { "Conscientiousness": 0.3, "Openness": 0.2, "Neuroticism": 0.2 },
+        "note": "Self-perception of which domains were captured."
+      },
+      "preferredFeature": {
+        "mapping": {
+          "More immersive environments (different settings/scenarios)": 75,
+          "Additional types of problem-solving challenges": 75,
+          "More social/team-based tasks": 75,
+          "More career-specific simulations (e.g., job-related scenarios)": 75
+        },
+        "domains": { "Behavioral": 0.2 },
+        "bigfive": { "Openness": 0.4 },
+        "note": "User feedback dimension — exploratory, informs product design."
+      },
+      "preferredAssessment": {
+        "mapping": {
+          "Fully VR-based application like this": 100,
+          "Traditional SAT/pen-and-paper tests": 50,
+          "A combination of both": 75,
+          "Neither": 25
+        },
+        "domains": { "Behavioral": 0.3 },
+        "bigfive": { "Openness": 0.3, "Conscientiousness": 0.2 },
+        "note": "User format preference — anchors ecological validity and acceptance."
+      },
+      "recommendationLikelihood": {
+        "mapping": {
+          "Definitely": 100,
+          "Probably": 75,
+          "Not sure": 50,
+          "Probably not": 25,
+          "Definitely not": 0
+        },
+        "domains": { "Behavioral": 0.4 },
+        "bigfive": { "Agreeableness": 0.3, "Extraversion": 0.2 },
+        "note": "Net Promoter–style willingness to recommend."
+      },
+      "overallExperience": {
+        "mapping": {
+          "Excellent": 100,
+          "Good": 75,
+          "Average": 50,
+          "Poor": 25,
+          "Very poor": 0
+        },
+        "domains": { "Behavioral": 0.5, "Psychological": 0.2 },
+        "bigfive": { "Extraversion": 0.3, "Agreeableness": 0.3 },
+        "note": "Global satisfaction"
+      }
+    }
+  }
+}

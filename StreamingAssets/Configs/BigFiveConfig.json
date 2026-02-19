@@ -1,0 +1,54 @@
+{
+  "note": "Big Five personality traits measured via TIPI (Ten-Item Personality Inventory). Direct scoring without T-score conversion - normalized to 0-100 scale.",
+  "traits": {
+    "O": {
+      "name": "Openness",
+      "description": "Imagination, curiosity, preference for novelty and variety. High scorers are creative, open-minded, and intellectually curious.",
+      "scale": "1-7 Likert (TIPI)",
+      "tipiItems": [5, 10],
+      "reverseItems": [10],
+      "normRange": [0, 100],
+      "note": "TIPI Items 5 (direct) and 10 (reverse). Score = ((Item5 + (8-Item10)) / 2 - 1) / 6 * 100"
+    },
+    "C": {
+      "name": "Conscientiousness",
+      "description": "Self-discipline, organization, goal-directed persistence. High scorers are reliable, organized, and hardworking.",
+      "scale": "1-7 Likert (TIPI)",
+      "tipiItems": [3, 8],
+      "reverseItems": [8],
+      "normRange": [0, 100],
+      "note": "TIPI Items 3 (direct) and 8 (reverse). Score = ((Item3 + (8-Item8)) / 2 - 1) / 6 * 100"
+    },
+    "E": {
+      "name": "Extraversion",
+      "description": "Energy, sociability, assertiveness, tendency to seek stimulation. High scorers are outgoing, energetic, and enjoy social interaction.",
+      "scale": "1-7 Likert (TIPI)",
+      "tipiItems": [1, 6],
+      "reverseItems": [6],
+      "normRange": [0, 100],
+      "note": "TIPI Items 1 (direct) and 6 (reverse). Score = ((Item1 + (8-Item6)) / 2 - 1) / 6 * 100"
+    },
+    "A": {
+      "name": "Agreeableness",
+      "description": "Compassion, cooperation, trust, altruism. High scorers are kind, empathetic, and value getting along with others.",
+      "scale": "1-7 Likert (TIPI)",
+      "tipiItems": [2, 7],
+      "reverseItems": [2],
+      "normRange": [0, 100],
+      "note": "TIPI Items 2 (reverse) and 7 (direct). Score = (((8-Item2) + Item7) / 2 - 1) / 6 * 100"
+    },
+    "N": {
+      "name": "Neuroticism",
+      "description": "Tendency toward emotional instability, anxiety, moodiness. High scorers experience negative emotions more frequently; low scorers are emotionally stable.",
+      "scale": "1-7 Likert (TIPI)",
+      "tipiItems": [4, 9],
+      "reverseItems": [9],
+      "normRange": [0, 100],
+      "note": "TIPI Items 4 (direct) and 9 (reverse). Score = ((Item4 + (8-Item9)) / 2 - 1) / 6 * 100"
+    }
+  },
+  "scoringFormula": {
+    "note": "For each trait: (1) Average the two items (reverse-scoring where needed), (2) Normalize to 0-100 scale using ((avg - 1) / 6) * 100",
+    "example": "Openness with Item5=6, Item10=3: Score = ((6 + (8-3)) / 2 - 1) / 6 * 100 = ((6 + 5) / 2 - 1) / 6 * 100 = (5.5 - 1) / 6 * 100 = 75.0"
+  }
+}
