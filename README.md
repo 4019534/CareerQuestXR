@@ -43,7 +43,7 @@ Participants complete performance-based VR tasks while the system captures objec
 - **Memory Recall Test** — Working memory sequence recall
 - **Reaction Timer Test** — Cognitive processing speed
 - **Navigation Grid** — Spatial processing and problem-solving
-- **Psychological Evaluation Test** — Stress response and emotional regulation (combined with self-report surveys and heart rate data). Participant's RIASEC                                         and Big Five profiles are evaluated in this test section as well.
+- **Psychological Evaluation Test** — Stress response and emotional regulation, behavioural tendencies, and the participant's RIASEC                                         and Big Five profiles are evaluated in this test section.
 
 ---
 
