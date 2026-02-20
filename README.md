@@ -64,8 +64,8 @@ Participants complete performance-based VR tasks while the system captures objec
 Assets/
 ├── Scripts/
 │   ├── SciFi/
-│   │   ├── MathQuiz/                 # Numerical reasoning task 2 logic
-│   │   ├── KeypadQuiz/               # Numerical reasoning task 1 logic
+│   │   ├── MathQuiz/                 # Numerical reasoning task 1 logic
+│   │   ├── KeypadQuiz/               # Numerical reasoning task 2 logic
 │   │   └── Nav/                      # Navigation grid (spatial reasoning)
 │   ├── SpecialSkills/Cogs/           # Cognitive domain tasks (memory, reaction time, puzzles)
 │   ├── Psche/                        # Psychological & behavioural domain (TIPI, personality profiler)
