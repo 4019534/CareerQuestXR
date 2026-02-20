@@ -32,7 +32,7 @@ Participants complete performance-based VR tasks while the system captures objec
 | VR Platform | Meta Quest 3S (128GB) |
 | VR SDK | Meta XR SDK |
 | UI Framework | Unity UI Toolkit |
-| Data Export | JSON, CSV |
+| Data Export | JSON, CSV, PDF |
 
 ---
 
