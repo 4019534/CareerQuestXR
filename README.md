@@ -69,7 +69,7 @@ Assets/
 │   │   └── Nav/                      # Navigation grid (spatial reasoning)
 │   ├── SpecialSkills/Cogs/           # Cognitive domain tasks (memory, reaction time, puzzles)
 │   ├── Psche/                        # Psychological & behavioural domain (TIPI, personality profiler)
-│   ├── Stats/                        # AAI scoring engine, career mapping & results UI
+│   ├── Stats/                        # AAI scoring engine, student-program mapping & results UI
 │   ├── MainMenu/                     # Scene and stats management
 │   ├── CreateSaveUser/               # User authentication
 │   ├── StartingScene/                # Starting screen logic
