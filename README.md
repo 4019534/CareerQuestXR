@@ -19,7 +19,7 @@ CareerQuestXR evaluates students across four multidimensional competency domains
 | **Psychological (P)** | Stress management, emotional regulation |
 | **Behavioural (B)** | Persistence, adaptability, hint utilisation |
 
-Participants complete performance-based VR tasks while the system captures objective behavioural metrics (accuracy, task completion time, hint usage, and interaction patterns) with millisecond precision. These metrics are integrated with Holland's **RIASEC** vocational interest model and the **Big Five** personality framework to compute an **Academic Alignment Index (AAI)** score, which ranks student-program fit across 21 selected UWC academic programs.
+Participants complete performance-based VR tasks while the system captures objective behavioural metrics (accuracy, task completion time, hint usage, and interaction patterns) with millisecond precision. These metrics are integrated with Holland's **RIASEC** vocational interest model and the **Big Five** personality framework to compute an **Academic Alignment Index (AAI)** score, which ranks student-program fit across 21 selected UWC academic streams.
 
 ---
 
