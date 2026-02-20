@@ -124,7 +124,7 @@ public class SceneLogicManager : MonoBehaviour
         foreach (GameObject trigger in triggers)
         {
             RiddleZone zone = trigger.GetComponent<RiddleZone>();
-            if (zone != null && zone.questionId == 1 && zone.gameObject.activeSelf)
+            if (zone != null && zone.questionId == 1)
             {                
                 trigger.SetActive(false);
                 CustomGrabMath.Instance.OnObjectMoved();

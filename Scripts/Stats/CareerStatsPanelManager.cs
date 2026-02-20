@@ -115,7 +115,7 @@ public class CareerStatsPanelManager : MonoBehaviour
 
     private void OnLoadButtonClicked()
     {
-        Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(username);
+        Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(username, rootPath);
 
         foreach (var test in userResults)
         {
@@ -255,7 +255,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         {
             try
             {
-                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user);
+                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user, rootPath);
                 
                 if (userResults.Count == 0)
                 {
@@ -393,7 +393,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         {
             try
             {
-                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user);
+                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user, rootPath);
                 
                 if (userResults.Count == 0)
                 {
@@ -562,7 +562,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         {
             try
             {
-                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user);
+                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user, rootPath);
                 
                 if (userResults.Count == 0)
                 {
@@ -920,7 +920,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         {
             try
             {
-                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user);
+                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user, rootPath);
                 
                 if (userResults.Count == 0)
                 {
@@ -1080,7 +1080,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         {
             try
             {
-                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user);
+                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user, rootPath);
                 
                 if (userResults.Count == 0)
                 {
@@ -1202,7 +1202,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         {
             try
             {
-                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user);
+                Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(user, rootPath);
                 
                 if (userResults.Count == 0)
                 {
@@ -1372,7 +1372,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         
         try
         {
-            Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(username);
+            Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(username, rootPath);
             
             if (userResults.Count == 0)
             {

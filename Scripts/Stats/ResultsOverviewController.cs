@@ -253,9 +253,8 @@ public class ResultsOverviewController : MonoBehaviour
 
     void DisplayOverallSummary()
     {
-        Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(username);
+        Dictionary<string, Dictionary<string, object>> userResults = UserResultsLoader.LoadUserResults(username, rootPath);
         int totalTests = testFolders.Length;
-        // int completedTests = summaries.Count(s => s.Completed);
         int completedTests = userResults.Count;
         float totalTime = summaries.Sum(s => s.TotalTime);
         TimeSpan time = TimeSpan.FromSeconds(totalTime);

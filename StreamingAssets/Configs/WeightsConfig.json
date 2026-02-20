@@ -264,7 +264,7 @@
       }
     }
   },
-  "MentalMathsTest2_2": {
+  "MentalMathsTest_test2": {
     "metrics": {
       "finalTotalTime": {
         "Cognitive": 0.5,
@@ -722,7 +722,7 @@
       }
     }
   },
-  "ReactionTimerTest2_2": {
+  "ReactionTimerTest_test2": {
     "note": "RT task — maps to processing speed (Cognitive), inhibitory control (Behavioral), and stress reactivity (Psychological).",
     "metrics": {
       "avgReactionTime": {
@@ -895,7 +895,7 @@
       }
     }
   },
-  "NavigationGrid2": {
+  "NavigationGrid_test2": {
     "note": "Spatial navigation and grid-based problem solving.",
     "metrics": {
       "overallTotalTime": {

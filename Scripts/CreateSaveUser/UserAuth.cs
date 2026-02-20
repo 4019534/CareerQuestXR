@@ -28,8 +28,8 @@ public class UserAuth : MonoBehaviour
         Instance = this;
         filePath = Path.Combine(Application.persistentDataPath, "userDeets.csv");
         currentUsername = PlayerPrefs.GetString("LoggedInUser", "");
-        ClearPersistentData();
-        // CreateDefaultConfigFiles();
+        // ClearPersistentData();
+        CreateDefaultConfigFiles();
     }
 
     private void ClearPersistentData()
