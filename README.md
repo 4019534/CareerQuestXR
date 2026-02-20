@@ -53,7 +53,7 @@ Participants complete performance-based VR tasks while the system captures objec
 2. Domain scores are weighted and combined into a composite profile
 3. The RIASEC Interest Profiler and TIPI Big Five survey results are layered in
 4. An **Academic Readiness Threshold** pre-filter is applied to the Intellectual and Cognitive domain scores (≥40%)
-5. The Academic Alignement Index (AAI) scores are then calculated using the weighted domain, RIASEC, and Big Five scores
+5. The **Academic Alignment Index (AAI)** scores are then calculated using the weighted domain, RIASEC, and Big Five scores
 6. The **AAI** ranks all 21 academic programs by student-program fit, producing a final recommendation report of the top 5 most suitable academic stream recommendations for the participant
 
 ---
