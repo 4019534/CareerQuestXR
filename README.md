@@ -2,7 +2,7 @@
 
 > **Mapping Your Future in Extended Reality (XR) through Virtual Aptitude Testing**
 
-CareerQuestXR is a proof-of-concept Extended Reality (XR) aptitude assessment system developed as part of an MSc Computer Science thesis at the University of the Western Cape (UWC). This study addresses the persistently high first-year dropout rates in South African higher education; driven by career misalignment and inadequate guidance, by delivering immersive, performance-based aptitude assessments in a standalone VR environment. Below is the link to the current apk of thr prototype developed for this research:
+CareerQuestXR is a proof-of-concept Extended Reality (XR) aptitude assessment system developed as part of an MSc Computer Science thesis at the University of the Western Cape (UWC). This study addresses the persistently high student attrition rates in South African higher education; driven by career misalignment and inadequate guidance, by delivering immersive, performance-based aptitude assessments in a standalone VR environment. Below is the link to the current apk of thr prototype developed for this research:
 
 https://drive.google.com/file/d/1GjwbksUuh9W3O4o9moda-acib-rSPvJW/view?usp=share_link
 
