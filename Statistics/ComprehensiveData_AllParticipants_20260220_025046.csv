@@ -1,0 +1,16 @@
+Username,Intellectual,Cognitive,Psychological,Behavioral,DomainAvg,Openness,Conscientiousness,Extraversion,Agreeableness,Neuroticism,RIASEC_R,RIASEC_I,RIASEC_A,RIASEC_S,RIASEC_E,RIASEC_C,DominantRIASEC,AcademicReadiness,TopCareer,TopCareerFitScore,RecommendationType
+Student01,87.61,66.88,78.36,81.34,78.55,61.26,56.85,54.97,54.95,16.42,0.00,44.44,0.00,0.00,0.00,55.56,CIR,78.04,"BSc Chemistry",76.30,Success
+Student04,81.35,63.64,75.27,76.07,74.08,51.04,56.40,49.55,49.95,26.13,0.00,11.11,0.00,0.00,55.56,11.11,EIC,73.18,"BCom Business Management",66.29,Success
+Student09,81.35,65.02,76.76,78.84,75.49,46.11,56.66,49.84,54.95,16.18,0.00,22.22,0.00,0.00,55.56,0.00,EIR,73.81,"BCom Accounting",65.27,Success
+Student17,80.00,63.39,75.31,75.88,73.65,46.01,56.37,49.55,54.95,26.13,0.00,11.11,0.00,0.00,66.67,0.00,EIR,72.33,"BCom Business Management",66.50,Success
+Student20,75.09,61.12,60.43,63.06,64.92,45.00,45.63,44.01,48.99,25.15,0.00,0.00,0.00,77.78,0.00,0.00,SRI,68.64,"BA Social Work",64.87,Success
+Student26_SmartAnxious,75.97,52.13,44.75,52.55,56.35,44.91,49.62,33.52,33.33,58.11,0.00,33.33,0.00,0.00,0.00,66.67,CIR,64.97,"BSc Physics",65.82,Success
+Student27_PersistentStruggler,47.15,53.61,60.25,57.29,54.58,28.99,59.95,38.02,49.72,24.58,0.00,0.00,0.00,77.78,22.22,0.00,SER,50.13,"BA Social Work",66.81,Success
+Student28_SmartQuitter,73.34,54.80,51.41,47.31,56.71,44.39,29.39,47.95,32.52,19.14,0.00,33.33,0.00,0.00,55.56,0.00,EIR,64.78,"BCom Accounting",57.40,Success
+Student29_CognitiveStrong_BehavioralWeak,78.29,54.29,50.57,47.04,57.55,54.49,29.27,37.81,38.65,28.71,0.00,22.22,66.67,0.00,0.00,0.00,AIR,67.21,"BSc Mathematics",64.84,Success
+Student30_ModerateIntellect_HighPsych_HighBehav,60.89,59.21,75.96,74.27,67.58,40.25,60.80,49.20,54.84,15.78,0.00,0.00,0.00,77.78,0.00,22.22,SCR,60.12,"BA Social Work",72.43,Success
+Student31_HighCognitive_LowIntellect_ModBehav,46.51,55.04,54.33,54.34,52.56,19.11,49.78,28.02,38.80,24.19,11.11,0.00,0.00,0.00,22.22,55.56,CER,50.45,"BCom Accounting",56.84,Success
+Student32_HighPsych_LowEverythingElse,35.64,45.42,46.97,37.81,41.46,27.55,28.60,36.85,47.52,9.26,11.11,0.00,0.00,77.78,0.00,0.00,SRI,40.15,"BA Social Work",55.04,Success
+Student33_LowIntellect_ModCog_HighBehav,44.81,54.39,63.30,62.37,56.22,19.22,60.13,28.02,44.72,24.70,22.22,0.00,0.00,0.00,22.22,33.33,CRE,49.23,"BCom Accounting",55.04,Success
+Student34_HighInt_HighPsych_LowCog_LowBehav,75.66,56.04,59.04,52.13,60.72,54.56,29.68,38.22,38.96,9.58,0.00,22.22,66.67,0.00,0.00,0.00,AIR,66.60,"BSc Mathematics",63.75,Success
+Student35_BalancedModerate,60.89,56.20,56.82,56.75,57.66,39.44,39.91,38.02,38.95,29.26,0.00,44.44,0.00,0.00,0.00,55.56,CIR,58.72,"BSc Chemistry",64.91,Success

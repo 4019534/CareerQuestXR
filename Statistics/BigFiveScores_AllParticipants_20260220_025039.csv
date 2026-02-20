@@ -1,0 +1,16 @@
+Username,Openness,Conscientiousness,Extraversion,Agreeableness,Neuroticism,PersonalityAvg,DominantTrait,LowestTrait
+Student01,61.26,56.85,54.97,54.95,16.42,48.89,Openness,Neuroticism
+Student04,51.04,56.40,49.55,49.95,26.13,46.61,Conscientiousness,Neuroticism
+Student09,46.11,56.66,49.84,54.95,16.18,44.75,Conscientiousness,Neuroticism
+Student17,46.01,56.37,49.55,54.95,26.13,46.60,Conscientiousness,Neuroticism
+Student20,45.00,45.63,44.01,48.99,25.15,41.76,Agreeableness,Neuroticism
+Student26_SmartAnxious,44.91,49.62,33.52,33.33,58.11,43.90,Neuroticism,Agreeableness
+Student27_PersistentStruggler,28.99,59.95,38.02,49.72,24.58,40.25,Conscientiousness,Neuroticism
+Student28_SmartQuitter,44.39,29.39,47.95,32.52,19.14,34.68,Extraversion,Neuroticism
+Student29_CognitiveStrong_BehavioralWeak,54.49,29.27,37.81,38.65,28.71,37.79,Openness,Neuroticism
+Student30_ModerateIntellect_HighPsych_HighBehav,40.25,60.80,49.20,54.84,15.78,44.18,Conscientiousness,Neuroticism
+Student31_HighCognitive_LowIntellect_ModBehav,19.11,49.78,28.02,38.80,24.19,31.98,Conscientiousness,Openness
+Student32_HighPsych_LowEverythingElse,27.55,28.60,36.85,47.52,9.26,29.95,Agreeableness,Neuroticism
+Student33_LowIntellect_ModCog_HighBehav,19.22,60.13,28.02,44.72,24.70,35.36,Conscientiousness,Openness
+Student34_HighInt_HighPsych_LowCog_LowBehav,54.56,29.68,38.22,38.96,9.58,34.20,Openness,Neuroticism
+Student35_BalancedModerate,39.44,39.91,38.02,38.95,29.26,37.12,Conscientiousness,Neuroticism

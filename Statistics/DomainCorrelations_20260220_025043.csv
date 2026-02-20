@@ -1,0 +1,47 @@
+Domain Correlation Analysis
+Generated: 2026-02-20 02:50:43
+Sample Size: 15 participants
+
+Descriptive Statistics
+Domain,Mean,SD,Min,Max
+Intellectual,66.97,16.38,35.64,87.61
+Cognitive,57.41,5.73,45.42,66.88
+Psychological,61.97,11.65,44.75,78.36
+Behavioral,61.14,13.39,37.81,81.34
+
+Pearson Correlation Matrix
+Domain,Intellectual,Cognitive,Psychological,Behavioral
+Intellectual,1.00,0.726,0.413,0.507
+Cognitive,0.726,1.00,0.871,0.920
+Psychological,0.413,0.871,1.00,0.953
+Behavioral,0.507,0.920,0.953,1.00
+
+Interpretation Guide
+Correlation Strength,|r| Range,Interpretation
+Very Weak,0.00 - 0.19,Negligible relationship
+Weak,0.20 - 0.39,Weak relationship
+Moderate,0.40 - 0.59,Moderate relationship
+Strong,0.60 - 0.79,Strong relationship
+Very Strong,0.80 - 1.00,Very strong relationship (potential multicollinearity)
+
+Statistical Interpretation
+Pair,Correlation,Strength,Distinctness
+Intellectual-Cognitive,0.726,Strong,Some Overlap
+Intellectual-Psychological,0.413,Moderate,Moderately Distinct
+Intellectual-Behavioral,0.507,Moderate,Moderately Distinct
+Cognitive-Psychological,0.871,Very Strong,High Overlap (Potential Multicollinearity)
+Cognitive-Behavioral,0.920,Very Strong,High Overlap (Potential Multicollinearity)
+Psychological-Behavioral,0.953,Very Strong,High Overlap (Potential Multicollinearity)
+
+Overall Domain Distinctness Assessment
+Average |r| across all pairs: 0,732
+Pairs with |r| > 0.70: 4/6
+
+CONCERNING: High multicollinearity detected (avg |r| ≥ 0.70)
+Domains may be measuring overlapping constructs. Review recommended.
+Note: 4 pair(s) show high correlation (|r| > 0.70).
+
+For thesis: Report correlation matrix and discuss domain independence.
+Expected: I-C should correlate moderately (both academic)
+Expected: P-B should correlate moderately (both non-academic)
+Expected: I/C-P/B should correlate weakly (academic vs non-academic)

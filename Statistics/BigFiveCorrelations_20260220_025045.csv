@@ -1,0 +1,42 @@
+Big Five Personality Correlation Analysis
+Generated: 2026-02-20 02:50:45
+Sample Size: 15 participants
+
+Descriptive Statistics
+Trait,Mean,SD,Min,Max
+Openness,41.49,12.68,19.11,61.26
+Conscientiousness,47.27,12.61,28.60,60.80
+Extraversion,41.57,8.39,28.02,54.97
+Agreeableness,45.45,8.03,32.52,54.95
+Neuroticism,23.56,11.51,9.26,58.11
+
+Pearson Correlation Matrix - Big Five Traits
+Trait,O,C,E,A,N
+Openness (O),1.00,-0.176,0.696,0.114,0.001
+Conscientiousness (C),-0.176,1.00,0.206,0.638,0.181
+Extraversion (E),0.696,0.206,1.00,0.592,-0.318
+Agreeableness (A),0.114,0.638,0.592,1.00,-0.419
+Neuroticism (N),0.001,0.181,-0.318,-0.419,1.00
+
+Statistical Interpretation
+Pair,Correlation,Strength,Independence
+Openness-Conscientiousness,-0.176,Very Weak,Highly Distinct
+Openness-Extraversion,0.696,Strong,Some Overlap
+Openness-Agreeableness,0.114,Very Weak,Highly Distinct
+Openness-Neuroticism,0.001,Very Weak,Highly Distinct
+Conscientiousness-Extraversion,0.206,Weak,Distinct
+Conscientiousness-Agreeableness,0.638,Strong,Some Overlap
+Conscientiousness-Neuroticism,0.181,Very Weak,Highly Distinct
+Extraversion-Agreeableness,0.592,Moderate,Moderately Distinct
+Extraversion-Neuroticism,-0.318,Weak,Distinct
+Agreeableness-Neuroticism,-0.419,Moderate,Moderately Distinct
+
+Overall Trait Independence Assessment
+Average |r| across all trait pairs: 0,334
+
+GOOD: Big Five traits show adequate independence (avg |r| < 0.50)
+
+Note: Big Five traits are theoretically independent orthogonal factors.
+Expected: Most correlations should be weak (|r| < 0.30)
+Expected: C-N negative correlation is common (conscientious people less neurotic)
+Expected: E-N negative correlation is common (extraverts less neurotic)
