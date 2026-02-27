@@ -2,7 +2,11 @@
 
 > **Mapping Your Future in Extended Reality (XR) through Virtual Aptitude Testing**
 
-CareerQuestXR is a proof-of-concept Extended Reality (XR) aptitude assessment system developed as part of an MSc Computer Science thesis at the University of the Western Cape (UWC). It addresses persistently high first-year dropout rates in South African higher education; driven by career misalignment and inadequate guidance, by delivering immersive, performance-based aptitude assessments in a standalone VR environment.
+CareerQuestXR is a proof-of-concept Extended Reality (XR) aptitude assessment system developed as part of an MSc Computer Science thesis at the University of the Western Cape (UWC). This study addresses the persistently high student attrition rates in South African higher education; driven by career misalignment and inadequate guidance, by delivering immersive, performance-based aptitude assessments in a standalone VR environment. Below is the link to the current apk of the latest prototype developed for this research.
+
+## Prototype Link
+
+https://drive.google.com/file/d/1GjwbksUuh9W3O4o9moda-acib-rSPvJW/view?usp=share_link
 
 ---
 
@@ -17,7 +21,7 @@ CareerQuestXR evaluates students across four multidimensional competency domains
 | **Psychological (P)** | Stress management, emotional regulation |
 | **Behavioural (B)** | Persistence, adaptability, hint utilisation |
 
-Participants complete performance-based VR tasks while the system captures objective behavioural metrics (accuracy, task completion time, hint usage, and interaction patterns) with millisecond precision. These metrics are integrated with Holland's **RIASEC** vocational interest model and the **Big Five** personality framework to compute an **Academic Alignment Index (AAI)** score, which ranks student-program fit across 21 selected UWC academic programs.
+Participants complete performance-based VR tasks while the system captures objective behavioural metrics (accuracy, task completion time, hint usage, and interaction patterns) with millisecond precision. These metrics are integrated with Holland's **RIASEC** vocational interest model and the **Big Five** personality framework to compute an **Academic Alignment Index (AAI)** score, which ranks student-program fit across 21 selected UWC academic streams.
 
 ---
 
@@ -30,7 +34,7 @@ Participants complete performance-based VR tasks while the system captures objec
 | VR Platform | Meta Quest 3S (128GB) |
 | VR SDK | Meta XR SDK |
 | UI Framework | Unity UI Toolkit |
-| Data Export | JSON, CSV |
+| Data Export | JSON, CSV, PDF |
 
 ---
 
@@ -41,7 +45,7 @@ Participants complete performance-based VR tasks while the system captures objec
 - **Memory Recall Test** — Working memory sequence recall
 - **Reaction Timer Test** — Cognitive processing speed
 - **Navigation Grid** — Spatial processing and problem-solving
-- **Psychological Evaluation Test** — Stress response and emotional regulation (combined with self-report surveys and heart rate data)
+- **Psychological Evaluation Test** — Stress response and emotional regulation, behavioural tendencies, and the participant's RIASEC                                         and Big Five profiles are evaluated in this test section.
 
 ---
 
@@ -51,7 +55,8 @@ Participants complete performance-based VR tasks while the system captures objec
 2. Domain scores are weighted and combined into a composite profile
 3. The RIASEC Interest Profiler and TIPI Big Five survey results are layered in
 4. An **Academic Readiness Threshold** pre-filter is applied to the Intellectual and Cognitive domain scores (≥40%)
-5. The **AAI** ranks all 21 academic programs by student-program fit, producing a final recommendation report of the top 5 most suitable academic stream recommendations for the participant
+5. The **Academic Alignment Index (AAI)** scores are then calculated using the weighted domains, RIASEC, and Big Five results
+6. The **AAI** ranks all 21 academic programs by student-program fit, producing a final recommendation report of the top 5 most suitable academic stream recommendations for the participant
 
 ---
 
@@ -61,12 +66,12 @@ Participants complete performance-based VR tasks while the system captures objec
 Assets/
 ├── Scripts/
 │   ├── SciFi/
-│   │   ├── KeypadQuiz/               # Numerical reasoning task 2 logic
 │   │   ├── MathQuiz/                 # Numerical reasoning task 1 logic
+│   │   ├── KeypadQuiz/               # Numerical reasoning task 2 logic
 │   │   └── Nav/                      # Navigation grid (spatial reasoning)
 │   ├── SpecialSkills/Cogs/           # Cognitive domain tasks (memory, reaction time, puzzles)
 │   ├── Psche/                        # Psychological & behavioural domain (TIPI, personality profiler)
-│   ├── Stats/                        # AAI scoring engine, career mapping & results UI
+│   ├── Stats/                        # AAI scoring engine, student-program mapping & results UI
 │   ├── MainMenu/                     # Scene and stats management
 │   ├── CreateSaveUser/               # User authentication
 │   ├── StartingScene/                # Starting screen logic
