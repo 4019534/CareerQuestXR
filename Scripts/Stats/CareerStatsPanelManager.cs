@@ -433,8 +433,7 @@ public class CareerStatsPanelManager : MonoBehaviour
 
                 row.Append($",{result.Type.ToString()}");
 
-                float academicReadiness = (domainScores.Intellectual * 0.35f + 
-                                        domainScores.Cognitive * 0.30f) / 0.65f;
+                float academicReadiness = (domainScores.Intellectual + domainScores.Cognitive) / 2f;
                 string academicReadinessStr = academicReadiness.ToString("F2", CultureInfo.InvariantCulture);
                 row.Append($",{academicReadinessStr}");
 
@@ -1108,8 +1107,7 @@ public class CareerStatsPanelManager : MonoBehaviour
                 
                 string dominantRIASEC = domainScores.DominantRIASECCode ?? "N/A";
                 
-                float academicReadiness = (domainScores.Intellectual * 0.35f + 
-                                        domainScores.Cognitive * 0.30f) / 0.65f;
+                float academicReadiness = (domainScores.Intellectual + domainScores.Cognitive) / 2f;
                 
                 CareerRecommendationResult result = CareerMapper.GenerateRecommendations(domainScores, userResults);
                 
@@ -1407,8 +1405,7 @@ public class CareerStatsPanelManager : MonoBehaviour
             
             reportData["bigfive"] = domainScores.BigFive;
             
-            float academicReadiness = (domainScores.Intellectual * 0.35f + 
-                                    domainScores.Cognitive * 0.30f) / 0.65f;
+            float academicReadiness = (domainScores.Intellectual + domainScores.Cognitive) / 2f;
             reportData["academic_readiness"] = academicReadiness;
             
             var recommendations = new List<Dictionary<string, object>>();
@@ -1525,7 +1522,7 @@ public class CareerStatsPanelManager : MonoBehaviour
         explanation.Append($"Your {scores.DominantRIASECCode} RIASEC profile indicates strong fit for this field's work style. ");
         
 
-        float academicReadiness = (scores.Intellectual * 0.35f + scores.Cognitive * 0.30f) / 0.65f;
+        float academicReadiness = (scores.Intellectual + scores.Cognitive) / 2f;
         if (academicReadiness >= 70)
         {
             explanation.Append($"Your academic readiness ({academicReadiness:F0}%) shows you're well-prepared for university-level study.");
