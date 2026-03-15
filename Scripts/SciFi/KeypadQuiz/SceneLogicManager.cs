@@ -121,22 +121,36 @@ public class SceneLogicManager : MonoBehaviour
     public void SkipToPart1()
     {
         totalSkipped++;
+
+        RiddleZone zone2 = null;
         foreach (GameObject trigger in triggers)
         {
             RiddleZone zone = trigger.GetComponent<RiddleZone>();
-            if (zone != null && zone.questionId == 1)
-            {                
-                trigger.SetActive(false);
-                CustomGrabMath.Instance.OnObjectMoved();
+            if (zone != null && zone.questionId == 2)
+            {
+                zone2 = zone;
                 break;
             }
-            if (zone != null && zone.questionId == 2 && zone.gameObject.activeSelf)
-            {                
-                trigger.SetActive(false);
-                OnRiddleZoneReached(2);
-                break;
+        }
+
+        if (zone2 != null && zone2.gameObject.activeSelf)
+        {
+            zone2.gameObject.SetActive(false);
+            OnRiddleZoneReached(2);
+        }
+        else
+        {
+            foreach (GameObject trigger in triggers)
+            {
+                RiddleZone zone = trigger.GetComponent<RiddleZone>();
+                if (zone != null && zone.questionId == 1)
+                {
+                    trigger.SetActive(false);
+                    CustomGrabMath.Instance.OnObjectMoved();
+                    break;
+                }
             }
-        }        
+        }
     }
 
     void StartLevel(int level)

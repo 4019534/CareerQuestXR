@@ -379,12 +379,14 @@ public static class CareerMapper
 
     private static bool MeetsAcademicReadiness(DomainScores participantScores, out float academicReadiness)
     {
-        float intellectualWeight = 0.35f;
-        float cognitiveWeight = 0.30f;
-        float totalWeight = intellectualWeight + cognitiveWeight;
+        // float intellectualWeight = 0.35f;
+        // float cognitiveWeight = 0.30f;
+        // float totalWeight = intellectualWeight + cognitiveWeight;
+
+        academicReadiness = (participantScores.Intellectual + participantScores.Cognitive) / 2f;
         
-        academicReadiness = (participantScores.Intellectual * intellectualWeight + 
-                           participantScores.Cognitive * cognitiveWeight) / totalWeight;
+        // academicReadiness = (participantScores.Intellectual * intellectualWeight + 
+        //                    participantScores.Cognitive * cognitiveWeight) / totalWeight;
         
         
         bool meetsThreshold = academicReadiness >= ACADEMIC_READINESS_THRESHOLD;        
