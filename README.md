@@ -6,7 +6,15 @@ CareerQuestXR is a proof-of-concept Extended Reality (XR) aptitude assessment sy
 
 ## Prototype Link
 
-https://drive.google.com/file/d/1GjwbksUuh9W3O4o9moda-acib-rSPvJW/view?usp=share_link
+https://drive.google.com/file/d/1Lq3rsepF17bC9OpJZtQ-jElTgHv5DTWd
+
+## Demo with Narration Link
+
+https://drive.google.com/file/d/1CWFz3_58yTeWRNzm7TVKOFbM4sp4hrvd
+
+## Demo without Narration Link
+
+https://drive.google.com/file/d/1FTGyWpZNRpxw-rFiCMg-ixgUM5qpTTo3
 
 ---
 
