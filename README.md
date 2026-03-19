@@ -163,8 +163,8 @@ This prototype was developed as part of an MSc Computer Science thesis at the **
 
 **Key findings (N=15: purposive sampling):**
 - Full task completion with clear performance differentiation across all participants
-- Moderate inter-domain independence (mean |r| = 0.589), revealing a two-construct model (I: Academic Capability vs. C-P-B: Self-Regulation Capacity)
-- Systematic, theoretically coherent program recommendations via AAI scores
+- Moderate inter-domain independence (mean |r| = 0.732), revealing a two-construct model (I: Academic Capability vs. C-P-B: Self-Regulation Capacity)
+- Systematic, theoretically coherent program recommendations via graduated AAI scores
 - Strong behavioural-performance correlation (r = +0.907), providing preliminary evidence for VR's ecological validity
 
 ---
